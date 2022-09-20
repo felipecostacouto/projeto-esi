@@ -1,4 +1,6 @@
 # Instruções para criar a imagem do docker do ambiente de desenvolvimento
+[![Maintainability](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/maintainability)](https://codeclimate.com/github/beasabreu/projeto-esi/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/beasabreu/projeto-esi/test_coverage)
 
 ## Primeiro passo 
 Instale o docker, git e docker-compose em seu computador
