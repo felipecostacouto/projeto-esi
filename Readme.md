@@ -1,76 +1,25 @@
-# Instruções para criar a imagem do docker do ambiente de desenvolvimento
 [![Maintainability](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/maintainability)](https://codeclimate.com/github/beasabreu/projeto-esi/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/beasabreu/projeto-esi/test_coverage)
 
-## Primeiro passo 
-Instale o docker, git e docker-compose em seu computador
+# Nome projeto
 
-Links: 
-https://www.docker.com/get-started
+# Membros
+Beatriz Abreu
+Cesar Kenzo
+Fabricio Kashino
+Felipe Costa Couto
+Henrique Tavares
 
-https://git-scm.com/
+# Como executar
 
-## Segundo passo 
-Abra o terminal e clone o respostório em alguma pasta local
+Dentro da pasta do projeto, executar
 
-````
-git clone https://github.com/vascmig/container_rails_ACH2006.git
-````
+1) docker compose build
 
-## Terceiro passo 
-Entre no repositorio clonado e crie o esqueleto do projeto rails
+2) docker compose up
 
-````
-docker compose run --no-deps web rails new . --force --no-deps 
-````
+Executar os seguintes para certificar que está tudo certo:
 
-## Quarto passo 
+1) docker compose exec web rake spec
 
-Construa a imagem do container docker
-
-````
-docker compose build
-````
-
-## Quinto passo 
-Inicie a execução do container
-
-````
-docker compose up
-````
-
-## Sexto passo 
-Execute os comandos, dentro do mesmo diretório do projeto (em outro terminal, ou seja, não feche o terminal que está rodando o programa do docker)
-
-````
-docker compose exec web rails generate rspec:install
-docker compose exec web rails generate cucumber:install
-````
-
-## Sétimo passo 
-Para validar se tudo foi executado corretamente, teste os seguintes comandos:
-
-````
-docker compose exec web rake spec
-docker compose exec web rake cucumber
-````
-
-## Observação
-Para executar comandos específicos dentro do container, execute o seguinte comando: 
-
-````
-docker compose exec web comando
-````
-
-Por exemplo:
-
-````
-docker compose exec web rails routes
-````
-
-## POSSÍVEIS ERROS 
-É possível que o git mude as quebras de linha de Linux para Windows, o que ocasionará um erro ao seguir o tutorial. Neste caso, certifique-se de que TODOS os arquivos utilizados utilizem a terminação de linha LF em vez de CRLF.
-
-# Para dúvidas
-
-Por favor, em caso de dúvidas postar no fórum online do e-disciplinas
+2) docker compose exec web rake cucumber
