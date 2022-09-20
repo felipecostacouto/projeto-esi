@@ -1,24 +1,13 @@
-# README
+Como executar:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dentro da pasta do projeto, executar
 
-Things you may want to cover:
+1) docker compose build
 
-* Ruby version
+2) docker compose up
 
-* System dependencies
+Executar os seguintes para certificar que está tudo certo:
 
-* Configuration
+1) docker compose exec web rake spec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2) docker compose exec web rake cucumber
