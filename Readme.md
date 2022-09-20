@@ -5,10 +5,16 @@
 
 # Membros
 Beatriz Abreu
+
 Cesar Kenzo
+
 Fabricio Kashino
+
 Felipe Costa Couto
+
 Henrique Tavares
+
+Leonardo Sato
 
 # Como executar
 
