@@ -5,7 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/beasabreu/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/beasabreu/projeto-esi?branch=main)
 
 ![Github Actions Build Status](https://github.com/beasabreu/projeto-esi/actions/workflows/ruby.yml/badge.svg)
-# Nome projeto
+# USP Share
+A [USP Share](https://projeto-esi-heroku.herokuapp.com/) é uma aplicação web voltada para o compartilhamento entre alunos de arquivos, resumos, anotações, mapas mentais e materiais de matérias ministradas na USP, separado por campus e curso.
 
 # Membros
 Beatriz Abreu
