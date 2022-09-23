@@ -3,11 +3,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :brands, only: [:index, :show] do
-    resources :products, only: [:index, :show]
-  end
-
-  resource :basket, only: [:show, :update, :destroy]
-
-  resolve("Basket") { route_for(:basket) }
 end
