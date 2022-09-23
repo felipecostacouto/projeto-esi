@@ -6,3 +6,12 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 15ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5090)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-23 00:49:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 488)
+  Rendered layout layouts/application.html.erb (Duration: 179.4ms | Allocations: 92112)
+Completed 200 OK in 186ms (Views: 182.5ms | ActiveRecord: 0.0ms | Allocations: 95586)
+
+
