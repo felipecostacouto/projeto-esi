@@ -59,10 +59,6 @@ group :development, :test do
   gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
-  gem 'coveralls', require: false
-
-
-
 end
 
 group :development do
