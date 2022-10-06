@@ -46,7 +46,7 @@ jobs:
 
   coveralls:
     name: coveralls-finish
-    needs: rake
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
