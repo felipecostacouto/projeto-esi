@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+*{margin:0;}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+html, body { min-height: 100vh; }
+
+.dropdown-menu>li>a:hover {
+    color: #262626 !important;
+    text-decoration: none;
+    background-color: #f5f5f5;
+ }

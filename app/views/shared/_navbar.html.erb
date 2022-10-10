@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">~Nome provisório~</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <%= link_to '<i class="bi bi-house-door"></i> Menu' .html_safe, menu_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-book"></i>
+            Matérias
+          </a>
+          <ul class="dropdown-menu bg-dark text-white">
+            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 1</a></li>
+            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 2</a></li>
+            <li><hr class="dropdown-divider text-white"></li>
+            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 3</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex text-white" role="search">         
+          <%= link_to '<i class="bi bi-box-arrow-in-right me-2"></i>Login' .html_safe, signup_path, class: "nav-link active me-3" %>
+          <%= link_to '<i class="bi bi-door-open me-2"></i>Cadastro' .html_safe, login_path, class: "nav-link active me-3" %>
+      </form>
+    </div>
+  </div>
+</nav>
