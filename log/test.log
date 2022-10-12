@@ -1,0 +1,13 @@
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-12 17:37:21 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 1.0ms | Allocations: 324)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 424)
+  Rendered layout layouts/application.html.erb (Duration: 98.0ms | Allocations: 33665)
+Completed 200 OK in 109ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 36971)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 17:37:37 -0300
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 17:37:37 -0300
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 17:37:37 -0300
