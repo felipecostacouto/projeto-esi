@@ -55,6 +55,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  gem 'coveralls', require: false
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
