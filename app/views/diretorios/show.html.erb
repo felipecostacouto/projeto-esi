@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @diretorio %>
+
+<div>
+  <%= link_to "Edit this diretorio", edit_diretorio_path(@diretorio) %> |
+  <%= link_to "Back to diretorios", diretorios_path %>
+
+  <%= button_to "Destroy this diretorio", @diretorio, method: :delete %>
+</div>

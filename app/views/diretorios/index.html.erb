@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Diretorios</h1>
+
+<div id="diretorios">
+  <% @diretorios.each do |diretorio| %>
+    <%= render diretorio %>
+    <p>
+      <%= link_to "Show this diretorio", diretorio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Criar Diretório", new_diretorio_path %>
