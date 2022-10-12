@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @diretorio %>
+
+<div>
+  <%= link_to "Editar", edit_diretorio_path(@diretorio) %> |
+  <%= link_to "Voltar para Diretórios", diretorios_path %>
+
+  <%= button_to "Apagar Diretório", @diretorio, method: :delete %>
+</div>

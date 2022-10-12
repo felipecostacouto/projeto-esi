@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><icon class="bi bi-folder"></icon> Diretorios</h1>
+
+<div id="diretorios">
+  <% @diretorios.each do |diretorio| %>
+    <p>
+      <icon class="bi bi-folder"/>
+      <%= link_to diretorio.name, diretorio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Criar Diretório", new_diretorio_path %>
