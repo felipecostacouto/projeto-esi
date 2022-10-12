@@ -10789,3 +10789,269 @@ Processing by DiretoriosController#index as HTML
 Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 3476)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-12 19:39:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 330)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 492)
+  Rendered layout layouts/application.html.erb (Duration: 127.9ms | Allocations: 35984)
+Completed 200 OK in 135ms (Views: 130.9ms | ActiveRecord: 0.0ms | Allocations: 38541)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 19:39:04 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 5734)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 8395)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 1.5ms | Allocations: 10145)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-12 20:41:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 330)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 492)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 35819)
+Completed 200 OK in 96ms (Views: 91.4ms | ActiveRecord: 0.0ms | Allocations: 38377)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:41:54 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5723)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 8384)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.7ms | Allocations: 10134)
+
+
+Started GET "/diretorios/23" for 127.0.0.1 at 2022-10-12 20:41:56 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.5ms | Allocations: 229)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1447)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3954)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 6757)
+
+
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-12 20:41:57 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 7.6ms | Allocations: 2867)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3169)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5698)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 6129)
+
+
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-12 20:42:05 -0300
+Processing by DiretoriosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "diretorio"=>{"name"=>"Testando", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/diretorios_controller.rb:27:in `block in create'
+  [1m[36mDiretorio Create (0.9ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Testando"], ["path", "root"], ["created_at", "2022-10-12 23:42:05.308754"], ["updated_at", "2022-10-12 23:42:05.308754"]]
+  ↳ app/controllers/diretorios_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (664.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/diretorios_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/diretorios/24
+Completed 302 Found in 682ms (ActiveRecord: 665.7ms | Allocations: 3777)
+
+
+Started GET "/diretorios/24" for 127.0.0.1 at 2022-10-12 20:42:06 -0300
+Processing by DiretoriosController#show as TURBO_STREAM
+  Parameters: {"id"=>"24"}
+  [1m[36mDiretorio Load (0.3ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 22)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 651)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3148)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 3984)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:42:11 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 890)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3296)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 3576)
+
+
+Started GET "/diretorios/24" for 127.0.0.1 at 2022-10-12 20:45:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 2.4ms | Allocations: 254)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2049)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 87.6ms | Allocations: 36671)
+Completed 200 OK in 115ms (Views: 90.7ms | ActiveRecord: 0.9ms | Allocations: 47781)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:45:17 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.4ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1294)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3818)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 4266)
+
+
+Started GET "/diretorios/24" for 127.0.0.1 at 2022-10-12 20:45:18 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 568)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2965)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 3733)
+
+
+Started GET "/diretorios/24/edit" for 127.0.0.1 at 2022-10-12 20:45:19 -0300
+Processing by DiretoriosController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/edit.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 7.4ms | Allocations: 2933)
+  Rendered diretorios/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3296)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5813)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 6639)
+
+
+Started GET "/diretorios/24" for 127.0.0.1 at 2022-10-12 20:45:22 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 569)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2966)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 3783)
+
+
+Started DELETE "/diretorios/24" for 127.0.0.1 at 2022-10-12 20:45:28 -0300
+Processing by DiretoriosController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"24"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/diretorios_controller.rb:52:in `destroy'
+  [1m[36mDiretorio Destroy (0.3ms)[0m  [1m[31mDELETE FROM "diretorios" WHERE "diretorios"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/diretorios_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (135.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/diretorios_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/diretorios
+Completed 302 Found in 142ms (ActiveRecord: 136.1ms | Allocations: 2934)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:45:28 -0300
+Processing by DiretoriosController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 865)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3426)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 3786)
+
+
+Started GET "/diretorios/23" for 127.0.0.1 at 2022-10-12 20:46:50 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:63:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 583)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2979)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 0.2ms | Allocations: 3708)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:46:53 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.3ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 813)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3218)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 3488)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:47:23 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1244)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4358)
+Completed 200 OK in 54ms (Views: 17.3ms | ActiveRecord: 0.2ms | Allocations: 5237)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-12 20:47:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 120)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 216)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3040)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 3775)
+
+
+Started GET "/diretorios" for 127.0.0.1 at 2022-10-12 20:47:27 -0300
+Processing by DiretoriosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/index.html.erb within layouts/application
+  [1m[36mDiretorio Load (0.3ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios"[0m
+  ↳ app/views/diretorios/index.html.erb:6
+  Rendered diretorios/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 895)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3300)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 3594)
+
+
