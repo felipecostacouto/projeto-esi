@@ -1,7 +1,7 @@
 <%= form_with(model: diretorio) do |form| %>
   <% if diretorio.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(diretorio.errors.count, "error") %> prohibited this diretorio from being saved:</h2>
+      <h2><%= pluralize(diretorio.errors.count, "erro(s)") %> impedem que o diretório seja salvo:</h2>
 
       <ul>
         <% diretorio.errors.each do |error| %>
@@ -22,6 +22,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit 'Salvar Diretório'%>
   </div>
 <% end %>

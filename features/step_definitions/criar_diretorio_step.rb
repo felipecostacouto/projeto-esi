@@ -8,7 +8,7 @@ Quando('preencho os campos com informações válidas') do
 end
 
 Quando('clico em salvar') do
-  click_on 'Create Diretorio'
+  click_on 'Salvar Diretório'
 end
 
 Então('um novo diretório deve ser criado') do

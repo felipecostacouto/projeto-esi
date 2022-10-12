@@ -3,8 +3,8 @@
 <%= render @diretorio %>
 
 <div>
-  <%= link_to "Edit this diretorio", edit_diretorio_path(@diretorio) %> |
-  <%= link_to "Back to diretorios", diretorios_path %>
+  <%= link_to "Editar", edit_diretorio_path(@diretorio) %> |
+  <%= link_to "Voltar para Diretórios", diretorios_path %>
 
-  <%= button_to "Destroy this diretorio", @diretorio, method: :delete %>
+  <%= button_to "Apagar Diretório", @diretorio, method: :delete %>
 </div>
