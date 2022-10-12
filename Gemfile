@@ -57,6 +57,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'coveralls', require: false
   # Use sqlite3 as the database for Active Record
+  gem 'coveralls', require: false
   gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false

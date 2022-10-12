@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diretorios
   get 'welcome/login', as: :login
   get 'welcome/signup', as: :signup
   get 'welcome/index', as: :menu
