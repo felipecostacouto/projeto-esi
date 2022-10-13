@@ -1,2 +1,64 @@
-<h1>Welcome#login</h1>
-<p>Find me in app/views/welcome/login.html.erb</p>
+<section class=" text-center text-lg-start centered">
+  <style>
+    .rounded-t-5 {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .rounded-tr-lg-0 {
+        border-top-right-radius: 0;
+      }
+
+      .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+      }
+    }
+  </style>
+  <div class="card mb-3">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-lg-4 d-none d-lg-flex">
+        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
+          class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body py-5 px-md-5">
+
+          <form>
+            <div class="form-floating mb-4">
+              <input type="email" id="form2Example1" class="form-control" />
+              <label class="form-label" for="form2Example1">Email</label>
+            </div>
+
+            <div class="form-floating mb-4">
+              <input type="password" id="form2Example2" class="form-control" />
+              <label class="form-label" for="form2Example2">Senha</label>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Lembre-se de mim </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <a href="#!">Esqueci minha senha</a>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-block mb-4">
+            <i class="bi bi-arrow-right-circle"></i>
+            Acessar
+            </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
