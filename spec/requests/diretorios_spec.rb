@@ -123,7 +123,7 @@ RSpec.describe "/diretorios", type: :request do
     end
 
     it "redirects to the diretorios list" do
-      diretorio = Diretorio.create! valid_create_attributes
+      diretorio = Diretorio.create! valid_attributes
       delete diretorio_url(diretorio)
       expect(response).to redirect_to(diretorios_url)
     end
