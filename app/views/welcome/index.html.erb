@@ -1,2 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      body{
+          background: #1a0c50;
+      }
 
-Hello World
+      .list-group{
+          padding-left: 30px;
+          padding-right: 30px;
+          width: 700px !important;
+          max-height: 500px;
+          min-height: 500px;
+          overflow-y: auto;
+      }
+
+      .container-list {
+          margin-top: 70px;
+          border: 1px solid #6a95ea;
+          border-radius: 20px;
+          padding-bottom: 20px;
+          padding-top: 10px;
+      }
+
+      .ml-2 {
+          padding-left: 10px;
+          color: #d2deff;
+      }
+
+
+      .list-group-item{
+          margin-top:10px;
+          border-radius: none;
+          background: #5E35B1;
+          cursor: pointer;
+          transition: all 0.01s ease-in-out;
+      }
+
+      .list-group-item:hover{
+          transform: scaleX(1.02);
+      }
+
+      .check{
+          opacity: 0;
+          transition: all 0.6s ease-in-out;
+      }
+
+      .list-group-item:hover .check {
+          opacity: 1;
+      }
+
+      .about span{
+          font-size: 12px;
+          margin-right: 10px;
+      }
+
+      input[type=checkbox] {
+          position: relative;
+          cursor: pointer;
+      }
+
+      input[type=checkbox]:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 0px;
+          left: 0;
+          border: 1px solid #10a3f9;
+          border-radius: 3px;
+          background-color: white;
+      }
+
+      input[type=checkbox]:checked:after {
+          content: "";
+          display: block;
+          width: 7px;
+          height: 12px;
+          border: solid #007bff;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2px;
+          left: 6px;
+      }
+
+      input[type="checkbox"]:checked + .check { opacity: 1; }
+  </style>
+</head>
+<body>
+<div class="container d-flex justify-content-center">
+
+  <div class="container-list">
+    <ul class="list-group mt-3 mb-3 text-white">
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Administração</h6>
+            <div class="about">
+              <span>22 Files</span>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Arquitetura e Urbanismo</h6>
+            <div class="about">
+              <span>62 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Artes cênicas</h6>
+            <div class="about">
+              <span>82 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Artes visuais</h6>
+            <div class="about">
+              <span>182 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Astronomia</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Audiovisual</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Biblioteconomia</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Biotecnologia</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Ciências agrárias</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Ciências Atuariais</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Ciências Biológicas</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-content-center">
+
+        <div class="d-flex flex-row">
+          <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+          <div class="ml-2">
+            <h6 class="mb-0">Ciências Biomédicas</h6>
+            <div class="about">
+              <span>802 Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+        </div>
+
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+</body>
+</html>
