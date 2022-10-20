@@ -5,19 +5,19 @@
 
       <ul>
         <% diretorio.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <li><%= error.message %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :name, "Nome", style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :path, style: "display: block" %>
+    <%= form.label :path, "Caminho", style: "display: block" %>
     <%= form.text_field :path %>
   </div>
 
