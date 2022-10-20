@@ -3,8 +3,8 @@ Dado('que estou na página de criação de diretórios') do
 end
 
 Quando('preencho os campos com informações válidas') do
-  fill_in 'Name', :with => 'ESI'
-  fill_in 'Path', :with => 'root'
+  fill_in 'Nome', :with => 'ESI'
+  fill_in 'Caminho', :with => 'root'
 end
 
 Quando('clico em salvar') do
@@ -23,11 +23,11 @@ Então('deve ser listado') do
 end
 
 Dado('não preencho o nome') do
-  fill_in 'Name', :with =>''
+  fill_in 'Nome', :with =>''
 end
 
 Dado('preencho o campo nome com "ESI?*?"') do
-  fill_in 'Name', :with =>'ESI?*?'
+  fill_in 'Nome', :with =>'ESI?*?'
 end
 
 Então('deverei ver a mensagem de erro "É obrigatório informar o nome!"') do
