@@ -4,7 +4,6 @@ end
 
 Quando('preencho os campos com informações válidas') do
   fill_in 'Nome', :with => 'ESI'
-  fill_in 'Caminho', :with => 'root'
 end
 
 Quando('clico em salvar') do
@@ -14,7 +13,7 @@ end
 Então('um novo diretório deve ser criado') do
   diretorio = Diretorio.order('id').last
   expect(diretorio.name).to eq('ESI')
-  expect(diretorio.path).to eq('root')
+  expect(diretorio.path).to eq('root\\Teste')
 end
 
 Então('deve ser listado') do

@@ -15,13 +15,14 @@
     <%= form.label :name, "Nome", style: "display: block" %>
     <%= form.text_field :name %>
   </div>
-
+  <br/>
   <div>
     <%= form.label :path, "Caminho", style: "display: block" %>
-    <%= form.text_field :path %>
+    <%= form.select :path, @diretorios.map { |d| [d.name, d.path.nil? ? d.name : d.path+'\\'+d.name]}%>
   </div>
-
+  <br/>
   <div>
     <%= form.submit 'Salvar Diretório'%>
   </div>
+  <br/>
 <% end %>
