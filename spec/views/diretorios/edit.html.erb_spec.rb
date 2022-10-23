@@ -6,6 +6,7 @@ RSpec.describe "diretorios/edit", type: :view do
       name: "MyString",
       path: "MyString"
     ))
+    @diretorios = Diretorio.all
   end
 
   it "renders the edit diretorio form" do
@@ -15,7 +16,7 @@ RSpec.describe "diretorios/edit", type: :view do
 
       assert_select "input[name=?]", "diretorio[name]"
 
-      assert_select "input[name=?]", "diretorio[path]"
+      assert_select "select[name=?]", "diretorio[path]"
     end
   end
 end

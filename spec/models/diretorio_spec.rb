@@ -14,7 +14,7 @@ RSpec.describe Diretorio, type: :model do
     expect(diretorio).not_to be_valid
   end
 
-  it 'Válido com campos preenchido corretament' do
+  it 'Válido com campos preenchido corretamente' do
     diretorio = Diretorio.new
     diretorio.name = 'Teste'
     diretorio.path = 'root'
