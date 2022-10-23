@@ -31,8 +31,6 @@ class DiretoriosController < ApplicationController
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @diretorio.errors, status: :unprocessable_entity }
       end
-
-      puts "----->>>>>" << @diretorio.id.to_s
     end
   end
 
