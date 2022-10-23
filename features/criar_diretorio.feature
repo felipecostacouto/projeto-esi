@@ -10,7 +10,6 @@ Dado que estou na página de criação de diretórios
 E preencho os campos com informações válidas
 E clico em salvar
 Então um novo diretório deve ser criado
-E deve ser listado
 
 Cenário: Criação de Diretório com erro - sem nome
 Dado que estou na página de criação de diretórios

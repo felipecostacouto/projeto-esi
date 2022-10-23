@@ -24824,3 +24824,85 @@ Processing by DiretoriosController#show as HTML
 Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.6ms | Allocations: 3922)
 
 
+Started GET "/diretorios/41530848" for 127.0.0.1 at 2022-10-23 14:09:13 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"41530848"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 41530848], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:65:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.2ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 41530848]]
+  ↳ app/views/diretorios/show.html.erb:128
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 658)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3230)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.9ms | Allocations: 4132)
+
+
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:09:14 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.7ms | Allocations: 1299)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1580)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3988)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4333)
+
+
+Started GET "/diretorios/41530848" for 127.0.0.1 at 2022-10-23 14:09:19 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"41530848"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 41530848], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:65:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.2ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 41530848]]
+  ↳ app/views/diretorios/show.html.erb:128
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 633)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3193)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 3922)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-23 14:40:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mDiretorio Pluck (0.2ms)[0m  [1m[34mSELECT "diretorios"."id" FROM "diretorios" WHERE "diretorios"."name" = ?[0m  [["name", "root"]]
+  ↳ app/views/welcome/index.html.erb:104
+  [1m[36mDiretoriosMapa Load (0.2ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1161811974425093174]]
+  ↳ app/views/welcome/index.html.erb:104
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ?[0m  [["id", 41530848]]
+  ↳ app/views/welcome/index.html.erb:105
+  Rendered collection of diretorios/_diretorio.html.erb [1 times] (Duration: 0.4ms | Allocations: 100)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ?[0m  [["id", 41530849]]
+  ↳ app/views/welcome/index.html.erb:105
+  Rendered collection of diretorios/_diretorio.html.erb [1 times] (Duration: 0.3ms | Allocations: 71)
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ?[0m  [["id", 41530850]]
+  ↳ app/views/welcome/index.html.erb:105
+  Rendered collection of diretorios/_diretorio.html.erb [1 times] (Duration: 0.3ms | Allocations: 70)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ?[0m  [["id", 41530851]]
+  ↳ app/views/welcome/index.html.erb:105
+  Rendered collection of diretorios/_diretorio.html.erb [1 times] (Duration: 0.3ms | Allocations: 70)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4525)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7146)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 1.7ms | Allocations: 7407)
+
+
+Started GET "/diretorios/41530848" for 127.0.0.1 at 2022-10-23 14:40:09 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"41530848"}
+  [1m[36mDiretorio Load (0.4ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 41530848], ["LIMIT", 1]]
+  ↳ app/controllers/diretorios_controller.rb:65:in `set_diretorio'
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.2ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 41530848]]
+  ↳ app/views/diretorios/show.html.erb:128
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 633)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3208)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 3962)
+
+
