@@ -1,12 +1,15 @@
 <div id="<%= dom_id diretorio %>">
-  <p>
-    <strong>Nome:</strong>
-    <%= diretorio.name %>
-  </p>
-
-  <p>
-    <strong>Caminho:</strong>
-    <%= diretorio.path %>
-  </p>
-
+  <%= link_to diretorio do %>
+  <li class="list-group-item d-flex justify-content-between align-content-center">
+    <div class="d-flex flex-row">
+      <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="40" />
+      <div class="ml-2">
+        <h6 class="mb-0"><%= diretorio.name %></h6>
+        <div class="about">
+          <span><%= diretorio.path %></span>
+        </div>
+      </div>
+    </div>
+  </li>
+  <% end %>
 </div>

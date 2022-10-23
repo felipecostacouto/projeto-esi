@@ -1,0 +1,2 @@
+class DiretoriosMapa < ApplicationRecord
+end
