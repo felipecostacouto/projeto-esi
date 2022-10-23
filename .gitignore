@@ -11,6 +11,10 @@
 /tmp/
 .idea/
 
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+
 # Used by dotenv library to load environment variables.
 # .env
 
