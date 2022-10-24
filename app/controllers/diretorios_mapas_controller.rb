@@ -1,0 +1,3 @@
+class DiretoriosMapasController < ApplicationController
+
+end
