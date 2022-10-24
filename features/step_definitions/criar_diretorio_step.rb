@@ -8,12 +8,14 @@ end
 
 Quando('clico em salvar') do
   click_on 'Salvar Diretório'
+  diretorio = Diretorio.last
 end
 
 Então('um novo diretório deve ser criado') do
-  diretorio = Diretorio.order('id').last
+  diretorio = Diretorio.last
+
   expect(diretorio.name).to eq('ESI')
-  expect(diretorio.path).to eq('root\\Teste')
+  expect(diretorio.path).to eq('/root/Administração')
 end
 
 Então('deve ser listado') do

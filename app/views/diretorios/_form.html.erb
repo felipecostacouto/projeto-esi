@@ -18,7 +18,7 @@
   <br/>
   <div>
     <%= form.label :path, "Caminho", style: "display: block" %>
-    <%= form.select :path, @diretorios.map { |d| [d.name, d.path.nil? ? d.name : d.path+'\\'+d.name]}%>
+    <%= form.select :path, @diretorios.map { |d| [d.name, d.name == 'root' ?  d.path + d.name : d.path+'/'+d.name]}%>
   </div>
   <br/>
   <div>
