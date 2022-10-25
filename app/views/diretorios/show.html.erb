@@ -162,7 +162,7 @@
     <button class="open-button" onclick="openForm()">Editar</button>
   <% end %>
 
-  <%= link_to new_diretorio_path do %>
+  <%= link_to new_diretorio_path(:diretorio_parent_id => @diretorio.id) do %>
     <button class="open-button" onclick="openForm()">Criar</button>
   <% end %>
 </div>

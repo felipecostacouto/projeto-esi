@@ -14,6 +14,8 @@ class DiretoriosController < ApplicationController
   def new
     @diretorio = Diretorio.new
     @diretorios = Diretorio.all
+
+    @diretorio_parent_id = params[:diretorio_parent_id]
   end
 
   # GET /diretorios/1/edit
@@ -27,8 +29,11 @@ class DiretoriosController < ApplicationController
 
     respond_to do |format|
       if @diretorio.save
-        format.html { redirect_to diretorio_url(@diretorio), notice: "Diretorio foi criado com sucesso." }
-        format.json { render :show, status: :created, location: @diretorio }
+        @diretorio_mapa = DiretoriosMapa.new({:parent => params[:diretorio][:parent_ID], :child => @diretorio.id})
+        if @diretorio_mapa.save
+          format.html { redirect_to diretorio_url(Diretorio.find(params[:diretorio][:parent_ID])), notice: "Diretorio foi criado com sucesso." }
+          format.json { render :show, status: :created, location: @diretorio }
+        end
       else
         @diretorios = Diretorio.all
         format.html { render :new, status: :unprocessable_entity }
