@@ -1,10 +1,145 @@
-<p style="color: green"><%= notice %></p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      body{
+          background: #1a0c50;
+      }
 
-<%= render @diretorio %>
+      .list-group{
+          padding-left: 30px;
+          padding-right: 30px;
+          width: 700px !important;
+          max-height: 500px;
+          min-height: 500px;
+          overflow-y: auto;
+      }
 
-<div>
-  <%= link_to "Editar", edit_diretorio_path(@diretorio) %> |
-  <%= link_to "Voltar para Diretórios", diretorios_path %>
+      .container-list {
+          margin-top: 70px;
+          border: 1px solid #6a95ea;
+          border-radius: 20px;
+          padding-bottom: 20px;
+          padding-top: 10px;
+      }
 
-  <%= button_to "Apagar Diretório", @diretorio, method: :delete %>
+      .list-group-item:hover .check {
+          opacity: 1;
+      }
+
+      .about span{
+          font-size: 12px;
+          margin-right: 10px;
+      }
+
+      input[type=checkbox] {
+          position: relative;
+          cursor: pointer;
+      }
+
+      input[type=checkbox]:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 0px;
+          left: 0;
+          border: 1px solid #10a3f9;
+          border-radius: 3px;
+          background-color: white;
+      }
+
+      input[type=checkbox]:checked:after {
+          content: "";
+          display: block;
+          width: 7px;
+          height: 12px;
+          border: solid #007bff;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2px;
+          left: 6px;
+      }
+
+      .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          width: 280px;
+      }
+
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+      }
+
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+      }
+
+      /* Set a style for the submit/login button */
+      .form-container .open-button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+      }
+
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+          background-color: red;
+      }
+
+      /* Add some hover effects to buttons */
+      .form-container .open-button:hover, .open-button:hover {
+          opacity: 1;
+      }
+
+      input[type="checkbox"]:checked + .check { opacity: 1; }
+  </style>
+</head>
+<body>
+<div class="container d-flex justify-content-center">
+
+  <div class="container-list">
+    <ul class="list-group mt-3 mb-3 text-white">
+
+      <% DiretoriosMapa.where(parent: @diretorio.id).each do |diretorios_in_selected_diretorio| %>
+        <%= render Diretorio.where(id: diretorios_in_selected_diretorio.child) %>
+      <% end %>
+
+    </ul>
+  </div>
+
 </div>
+
+<div class="container-buttons d-flex justify-content-center">
+
+  <%= link_to new_diretorio_path do %>
+    <button class="open-button" onclick="openForm()">Criar diretório</button>
+  <% end %>
+
+</div>
+</body>
+</html>

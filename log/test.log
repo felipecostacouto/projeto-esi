@@ -345,3 +345,1825 @@ Processing by DiretoriosController#create as HTML
   Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 157)
   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2888)
 Completed 422 Unprocessable Entity in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3461)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 00:01:59 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 4.2ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 37825)
+Completed 200 OK in 47ms (Views: 38.1ms | ActiveRecord: 0.4ms | Allocations: 46695)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-18 00:01:59 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2692)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-18 03:01:59.423481"], ["updated_at", "2022-10-18 03:01:59.423481"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.8ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-18 03:01:59.430929"], ["updated_at", "2022-10-18 03:01:59.430929"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-18 03:01:59.431986"], ["updated_at", "2022-10-18 03:01:59.431986"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.9ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-18 03:01:59.440453"], ["updated_at", "2022-10-18 03:01:59.440453"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered diretorios/show.html.erb (Duration: 2.0ms | Allocations: 1180)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.6ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 37380)
+Completed 200 OK in 39ms (Views: 30.8ms | ActiveRecord: 0.3ms | Allocations: 45927)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-18 03:02:01.132823"], ["updated_at", "2022-10-18 03:02:01.132823"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1751)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.4ms | Allocations: 224)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1293)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2940)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 3861)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.7ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2424)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.2ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 4154)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.4ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2894)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3454)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-18 00:02:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 405)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2210)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2903)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:35:52 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.8ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 37707)
+Completed 200 OK in 48ms (Views: 39.5ms | ActiveRecord: 0.3ms | Allocations: 46578)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-18 21:35:52 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2692)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-19 00:35:52.445390"], ["updated_at", "2022-10-19 00:35:52.445390"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.8ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:35:52.452298"], ["updated_at", "2022-10-19 00:35:52.452298"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:35:52.453287"], ["updated_at", "2022-10-19 00:35:52.453287"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.8ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:35:52.461569"], ["updated_at", "2022-10-19 00:35:52.461569"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered diretorios/show.html.erb (Duration: 1.9ms | Allocations: 1180)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.6ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 37434)
+Completed 200 OK in 47ms (Views: 39.3ms | ActiveRecord: 0.3ms | Allocations: 45941)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-19 00:35:54.091444"], ["updated_at", "2022-10-19 00:35:54.091444"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1751)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1296)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2930)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 3851)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.0ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 4154)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.4ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2888)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3448)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-18 21:35:54 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 405)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 2209)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2902)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:36:50 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.9ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 37777)
+Completed 200 OK in 41ms (Views: 33.5ms | ActiveRecord: 0.4ms | Allocations: 46648)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-18 21:36:50 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1917)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2692)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-19 00:36:50.690618"], ["updated_at", "2022-10-19 00:36:50.690618"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:36:50.696887"], ["updated_at", "2022-10-19 00:36:50.696887"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.0ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:36:50.698164"], ["updated_at", "2022-10-19 00:36:50.698164"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.6ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.0ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 00:36:50.705504"], ["updated_at", "2022-10-19 00:36:50.705504"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered diretorios/show.html.erb (Duration: 1.6ms | Allocations: 1180)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.4ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 37550)
+Completed 200 OK in 45ms (Views: 37.3ms | ActiveRecord: 0.6ms | Allocations: 46056)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-19 00:36:52.187044"], ["updated_at", "2022-10-19 00:36:52.187044"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1751)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1293)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2927)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 3848)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.2ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4154)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.2ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2892)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3452)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-18 21:36:52 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 405)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2210)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2903)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 19:52:25 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 4.4ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 37785)
+Completed 200 OK in 50ms (Views: 41.0ms | ActiveRecord: 0.3ms | Allocations: 46655)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-19 19:52:25 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2692)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-19 22:52:25.730621"], ["updated_at", "2022-10-19 22:52:25.730621"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 22:52:25.736686"], ["updated_at", "2022-10-19 22:52:25.736686"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.0ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 22:52:25.737918"], ["updated_at", "2022-10-19 22:52:25.737918"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.8ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.0ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 22:52:25.745493"], ["updated_at", "2022-10-19 22:52:25.745493"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered diretorios/show.html.erb (Duration: 1.9ms | Allocations: 1180)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.7ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 37501)
+Completed 200 OK in 45ms (Views: 36.9ms | ActiveRecord: 0.3ms | Allocations: 46008)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-19 22:52:27.392884"], ["updated_at", "2022-10-19 22:52:27.392884"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1751)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1296)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2930)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 3851)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.0ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4154)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.4ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2894)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3454)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-19 19:52:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 405)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2210)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2903)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "diretorios"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "diretorios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "path" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "diretorios_mapas"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "diretorios_mapas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "parent" integer, "child" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221019230530)[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221011222204);
+
+[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-10-19 23:09:19.611618"], ["updated_at", "2022-10-19 23:09:19.611618"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7ecadf190699a4aa041b1cd9b9296bebd29e549c"], ["created_at", "2022-10-19 23:09:19.614974"], ["updated_at", "2022-10-19 23:09:19.614974"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 20:09:19 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.0ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 37865)
+Completed 200 OK in 42ms (Views: 33.5ms | ActiveRecord: 0.3ms | Allocations: 46739)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-19 20:09:19 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2692)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-19 23:09:19.817597"], ["updated_at", "2022-10-19 23:09:19.817597"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.7ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 23:09:19.824357"], ["updated_at", "2022-10-19 23:09:19.824357"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 23:09:19.825439"], ["updated_at", "2022-10-19 23:09:19.825439"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.7ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-19 23:09:19.833287"], ["updated_at", "2022-10-19 23:09:19.833287"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered diretorios/show.html.erb (Duration: 1.6ms | Allocations: 1180)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.3ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 37367)
+Completed 200 OK in 36ms (Views: 29.3ms | ActiveRecord: 0.3ms | Allocations: 45877)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-19 23:09:21.343258"], ["updated_at", "2022-10-19 23:09:21.343258"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1751)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  Rendered diretorios/_diretorio.html.erb (Duration: 0.2ms | Allocations: 221)
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1302)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2949)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 3872)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.7ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.3ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 4154)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.3ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2894)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3455)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-19 20:09:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 405)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2210)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2903)
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "diretorios"[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "diretorios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "path" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "diretorios_mapas"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "diretorios_mapas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "parent" integer, "child" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221019230530)[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221011222204);
+
+[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-10-23 15:53:07.552803"], ["updated_at", "2022-10-23 15:53:07.552803"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7ecadf190699a4aa041b1cd9b9296bebd29e549c"], ["created_at", "2022-10-23 15:53:07.556264"], ["updated_at", "2022-10-23 15:53:07.556264"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 12:53:07 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.3ms | Allocations: 2929)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3596)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 163.8ms | Allocations: 98732)
+Completed 200 OK in 175ms (Views: 166.0ms | ActiveRecord: 0.4ms | Allocations: 107678)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 12:53:07 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1917)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 15:53:07.856020"], ["updated_at", "2022-10-23 15:53:07.856020"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.3ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 2.1ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 15:53:07.863506"], ["updated_at", "2022-10-23 15:53:07.863506"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 15:53:07.864761"], ["updated_at", "2022-10-23 15:53:07.864761"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.7ms | Allocations: 453)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 15:53:07.873526"], ["updated_at", "2022-10-23 15:53:07.873526"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb (Duration: 3.0ms | Allocations: 1884)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 13:51:37 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.0ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 37752)
+Completed 200 OK in 42ms (Views: 33.7ms | ActiveRecord: 0.3ms | Allocations: 46651)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 13:51:37 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 16:51:37.985050"], ["updated_at", "2022-10-23 16:51:37.985050"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:51:37.991153"], ["updated_at", "2022-10-23 16:51:37.991153"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:51:37.992210"], ["updated_at", "2022-10-23 16:51:37.992210"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.6ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.0ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:51:37.999691"], ["updated_at", "2022-10-23 16:51:37.999691"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb (Duration: 1.9ms | Allocations: 1268)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 13:53:47 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.9ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 37855)
+Completed 200 OK in 42ms (Views: 33.5ms | ActiveRecord: 0.3ms | Allocations: 46754)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 13:53:47 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 16:53:47.348353"], ["updated_at", "2022-10-23 16:53:47.348353"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:53:47.354497"], ["updated_at", "2022-10-23 16:53:47.354497"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:53:47.355498"], ["updated_at", "2022-10-23 16:53:47.355498"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.6ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:53:47.363199"], ["updated_at", "2022-10-23 16:53:47.363199"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb (Duration: 1.7ms | Allocations: 1268)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 13:59:56 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.0ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 37810)
+Completed 200 OK in 42ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 46709)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 13:59:56 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 16:59:56.689462"], ["updated_at", "2022-10-23 16:59:56.689462"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.7ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:59:56.695803"], ["updated_at", "2022-10-23 16:59:56.695803"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:59:56.697018"], ["updated_at", "2022-10-23 16:59:56.697018"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.7ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.0ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 16:59:56.704653"], ["updated_at", "2022-10-23 16:59:56.704653"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/show.html.erb
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb (Duration: 1.7ms | Allocations: 1268)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:12:36 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.0ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 37884)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 0.3ms | Allocations: 46783)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 14:12:36 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1917)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 17:12:36.980106"], ["updated_at", "2022-10-23 17:12:36.980106"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:12:36.986239"], ["updated_at", "2022-10-23 17:12:36.986239"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:12:36.987312"], ["updated_at", "2022-10-23 17:12:36.987312"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.8ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.9ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.1ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.4ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 37532)
+Completed 200 OK in 38ms (Views: 31.0ms | ActiveRecord: 0.3ms | Allocations: 46070)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.2ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-23 17:12:38.671009"], ["updated_at", "2022-10-23 17:12:38.671009"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1757)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1571)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3222)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 4137)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.5ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2424)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 12.5ms | Allocations: 1926)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1990)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3573)
+Completed 422 Unprocessable Entity in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 4177)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.7ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.5ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2895)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3459)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-23 14:12:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Pluck (0.1ms)[0m  [1m[34mSELECT "diretorios"."id" FROM "diretorios" WHERE "diretorios"."name" = ?[0m  [["name", "root"]]
+  [1m[36mDiretoriosMapa Load (0.0ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" IS NULL[0m
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 815)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2618)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 3303)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:11 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 6.7ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 37740)
+Completed 200 OK in 126ms (Views: 64.9ms | ActiveRecord: 4.1ms | Allocations: 46641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 14:39:11 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 17:39:11.979419"], ["updated_at", "2022-10-23 17:39:11.979419"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.0ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.6ms | Allocations: 1314)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:39:11.985772"], ["updated_at", "2022-10-23 17:39:11.985772"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:39:11.986757"], ["updated_at", "2022-10-23 17:39:11.986757"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.9ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.1ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.2ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.5ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 37397)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.3ms | Allocations: 45935)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-23 17:39:13.542629"], ["updated_at", "2022-10-23 17:39:13.542629"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1757)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1571)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3222)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 4137)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.1ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4156)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.5ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2888)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3450)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-23 14:39:13 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Pluck (0.1ms)[0m  [1m[34mSELECT "diretorios"."id" FROM "diretorios" WHERE "diretorios"."name" = ?[0m  [["name", "root"]]
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" IS NULL[0m
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 812)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2609)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 3294)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:28 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 3.8ms | Allocations: 2928)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3595)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 37757)
+Completed 200 OK in 107ms (Views: 44.4ms | ActiveRecord: 0.3ms | Allocations: 46656)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "diretorios"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/welcome/login" for 127.0.0.1 at 2022-10-23 14:39:28 -0300
+Processing by WelcomeController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/login.html.erb within layouts/application
+  Rendered welcome/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1917)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2693)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MyString"], ["path", "MyString"], ["created_at", "2022-10-23 17:39:28.400132"], ["updated_at", "2022-10-23 17:39:28.400132"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/edit.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 1.2ms | Allocations: 879)
+  Rendered diretorios/edit.html.erb (Duration: 1.9ms | Allocations: 1317)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:39:28.406964"], ["updated_at", "2022-10-23 17:39:28.406964"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.0ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Name"], ["path", "Path"], ["created_at", "2022-10-23 17:39:28.407972"], ["updated_at", "2022-10-23 17:39:28.407972"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering diretorios/index.html.erb
+  Rendered diretorios/index.html.erb (Duration: 0.7ms | Allocations: 454)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering diretorios/new.html.erb
+  Rendered diretorios/_form.html.erb (Duration: 0.8ms | Allocations: 789)
+  Rendered diretorios/new.html.erb (Duration: 1.0ms | Allocations: 895)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.6ms | Allocations: 2662)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3255)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 37435)
+Completed 200 OK in 42ms (Views: 30.9ms | ActiveRecord: 0.5ms | Allocations: 45971)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI", "path"=>"root"}, "commit"=>"Salvar Diretório"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDiretorio Create (0.1ms)[0m  [1m[32mINSERT INTO "diretorios" ("name", "path", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ESI"], ["path", "root"], ["created_at", "2022-10-23 17:39:29.913026"], ["updated_at", "2022-10-23 17:39:29.913026"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/diretorios/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1757)
+Started GET "/diretorios/1" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiretorio Load (0.2ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" WHERE "diretorios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/show.html.erb within layouts/application
+  [1m[36mDiretoriosMapa Load (0.1ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" = ?[0m  [["parent", 1]]
+  Rendered diretorios/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1570)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3221)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 4136)
+  [1m[36mDiretorio Load (0.1ms)[0m  [1m[34mSELECT "diretorios".* FROM "diretorios" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.7ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 2.1ms | Allocations: 1918)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1982)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3552)
+Completed 422 Unprocessable Entity in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 4156)
+Started GET "/diretorios/new" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 0.6ms | Allocations: 715)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 787)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2725)
+Started POST "/diretorios" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by DiretoriosController#create as HTML
+  Parameters: {"diretorio"=>{"name"=>"ESI?*?", "path"=>""}, "commit"=>"Salvar Diretório"}
+  Rendering layout layouts/application.html.erb
+  Rendering diretorios/new.html.erb within layouts/application
+  Rendered diretorios/_form.html.erb (Duration: 1.3ms | Allocations: 1254)
+  Rendered diretorios/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1318)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2888)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3450)
+Started GET "/welcome/index" for 127.0.0.1 at 2022-10-23 14:39:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDiretorio Pluck (0.1ms)[0m  [1m[34mSELECT "diretorios"."id" FROM "diretorios" WHERE "diretorios"."name" = ?[0m  [["name", "root"]]
+  [1m[36mDiretoriosMapa Load (0.0ms)[0m  [1m[34mSELECT "diretorios_mapas".* FROM "diretorios_mapas" WHERE "diretorios_mapas"."parent" IS NULL[0m
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 812)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2609)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 3294)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
