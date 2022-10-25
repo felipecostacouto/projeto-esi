@@ -69,16 +69,6 @@
           left: 6px;
       }
 
-      .open-button {
-          background-color: #555;
-          color: white;
-          padding: 16px 20px;
-          border: none;
-          cursor: pointer;
-          opacity: 0.8;
-          width: 280px;
-      }
-
       /* Full-width input fields */
       .form-container input[type=text], .form-container input[type=password] {
           width: 100%;
@@ -106,14 +96,33 @@
           opacity: 0.8;
       }
 
+      .open-button {
+          border: 2px solid #6a95ea;
+          border-radius: 10px;
+          margin-top: 20px;
+          margin-right: 20px;
+          background-color: rgba(7, 8, 35, 0.7);
+          color: white;
+          padding: 16px 20px;
+          cursor: pointer;
+          opacity: 0.8;
+          width: 280px;
+          font-size: 20px;
+      }
+
       /* Add a red background color to the cancel button */
       .form-container .cancel {
           background-color: red;
       }
 
       /* Add some hover effects to buttons */
-      .form-container .open-button:hover, .open-button:hover {
+      .form-container .open-button:hover {
           opacity: 1;
+      }
+
+      .open-button:hover {
+          opacity: 1;
+          background-color: black;
       }
 
       input[type="checkbox"]:checked + .check { opacity: 1; }
@@ -154,7 +163,7 @@
   <% end %>
 
   <%= link_to new_diretorio_path do %>
-    <button class="open-button" onclick="openForm()">Criar diretório</button>
+    <button class="open-button" onclick="openForm()">Criar</button>
   <% end %>
 </div>
 </body>
