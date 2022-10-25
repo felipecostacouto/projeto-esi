@@ -1,0 +1,7 @@
+root:
+  name: root
+  path: ''
+
+teste:
+  name: Teste
+  path: root

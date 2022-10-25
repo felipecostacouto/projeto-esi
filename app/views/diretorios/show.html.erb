@@ -121,6 +121,19 @@
 </head>
 <body>
 <div class="container d-flex justify-content-center">
+  <p style="color: white">
+    <strong><%= @diretorio.name %></strong>
+  </p>
+</div>
+<div class="container d-flex justify-content-center" style="color: white">
+  <strong>Caminho: </strong>
+  <%= @diretorio.path %>
+</div>
+<div class="container d-flex justify-content-center" style="color: white">
+  <strong>Data Criação: </strong>
+  <%= @diretorio.created_at.strftime("%d/%m/%y") %>
+</div>
+<div class="container d-flex justify-content-center">
 
   <div class="container-list">
     <ul class="list-group mt-3 mb-3 text-white">
@@ -136,10 +149,13 @@
 
 <div class="container-buttons d-flex justify-content-center">
 
+  <%= link_to edit_diretorio_path(@diretorio) do %>
+    <button class="open-button" onclick="openForm()">Editar</button>
+  <% end %>
+
   <%= link_to new_diretorio_path do %>
     <button class="open-button" onclick="openForm()">Criar diretório</button>
   <% end %>
-
 </div>
 </body>
 </html>

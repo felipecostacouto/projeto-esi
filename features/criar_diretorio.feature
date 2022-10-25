@@ -12,13 +12,13 @@ E clico em salvar
 Então um novo diretório deve ser criado
 
 Cenário: Criação de Diretório com erro - sem nome
-Dado que estou na página de criação de diretórios
-E não preencho o nome
-E clico em salvar
-Então deverei ver a mensagem de erro "É obrigatório informar o nome!"
+  Dado que estou na página de criação de diretórios
+  E não preencho o nome
+  E clico em salvar
+  Então deverei ver a mensagem de erro "É obrigatório informar o nome!"
 
 Cenário: Criação de Diretório com erro - nome inválido
-Dado que estou na página de criação de diretórios
-E preencho o campo nome com "ESI?*?"
-E clico em salvar
-Então deverei ver a mensagem de erro "Nome inválido. Não é permitido a utilização dos caracteres especiais"
+  Dado que estou na página de criação de diretórios
+  E preencho o campo nome com "ESI?*?"
+  E clico em salvar
+  Então deverei ver a mensagem de erro "Nome inválido. Não é permitido a utilização dos caracteres especiais"

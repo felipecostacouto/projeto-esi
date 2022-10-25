@@ -5,23 +5,24 @@
 
       <ul>
         <% diretorio.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <li><%= error.message %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :name, "Nome", style: "display: block" %>
     <%= form.text_field :name %>
   </div>
-
+  <br/>
   <div>
-    <%= form.label :path, style: "display: block" %>
-    <%= form.text_field :path %>
+    <%= form.label :path, "Caminho", style: "display: block" %>
+    <%= form.select :path, @diretorios.map { |d| [d.name, d.name == 'root' ?  d.path + d.name : d.path+'/'+d.name]}%>
   </div>
-
+  <br/>
   <div>
     <%= form.submit 'Salvar Diretório'%>
   </div>
+  <br/>
 <% end %>

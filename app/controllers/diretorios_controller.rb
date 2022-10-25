@@ -3,7 +3,7 @@ class DiretoriosController < ApplicationController
 
   # GET /diretorios or /diretorios.json
   def index
-    @diretorios = Diretorio.all
+    @diretorios = Diretorio.where.not(name: 'root')
   end
 
   # GET /diretorios/1 or /diretorios/1.json
@@ -13,10 +13,12 @@ class DiretoriosController < ApplicationController
   # GET /diretorios/new
   def new
     @diretorio = Diretorio.new
+    @diretorios = Diretorio.all
   end
 
   # GET /diretorios/1/edit
   def edit
+    @diretorios = Diretorio.where.not(id: @diretorio.id)
   end
 
   # POST /diretorios or /diretorios.json
@@ -28,6 +30,7 @@ class DiretoriosController < ApplicationController
         format.html { redirect_to diretorio_url(@diretorio), notice: "Diretorio foi criado com sucesso." }
         format.json { render :show, status: :created, location: @diretorio }
       else
+        @diretorios = Diretorio.all
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @diretorio.errors, status: :unprocessable_entity }
       end
@@ -41,6 +44,7 @@ class DiretoriosController < ApplicationController
         format.html { redirect_to diretorio_url(@diretorio), notice: "Diretorio foi atualizado com sucesso." }
         format.json { render :show, status: :ok, location: @diretorio }
       else
+        @diretorios = Diretorio.where.not(id: @diretorio.id)
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @diretorio.errors, status: :unprocessable_entity }
       end
