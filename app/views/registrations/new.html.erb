@@ -1,0 +1,78 @@
+<section class="text-center text-lg-start centered">
+  <style>
+    .cascading-right {
+      margin-right: -50px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+  <script>
+  function verifyPassword(){
+    var password = document.getElementById("password").value;
+    var password_confirmation = document.getElementById("password_confirmation").value;
+    var btnSignup = document.getElementById("btnSignup");
+    if(password == password_confirmation){   
+      btnSignup.disabled = false;
+      btnSignup.style.background = '#0d6efd';
+    }else{
+      btnSignup.disabled = true;
+      btnSignup.style.background = 'red';
+    }
+  }
+  </script>
+  
+  <%= form_with model: @User, url: signup_path do |form| %>
+  <p style="color: green"><%= notice %></p>
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Registre-se!</h2>
+            <form>
+                <div class="form-floating mb-4">
+                    <%= form.text_field :name,  class: "form-control", id: "usernick" %>
+                    <label class="form-label" for="usernick">Usuário</label>
+                </div>
+
+              <div class="form-floating mb-4">
+                <%= form.text_field :email,  class: "form-control", id: "email" %>
+                <label class="form-label" for="email">Email</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <%= form.password_field :password,  class: "form-control", id: "password", onkeyup: "verifyPassword();" %>
+                <label class="form-label" for="password">Senha</label>
+              </div>
+
+              <div class="form-floating mb-4">
+              <%= form.password_field :password_confirmation,  class: "form-control", id: "password_confirmation", onkeyup: "verifyPassword();" %>
+                <label class="form-label" for="password_confirmation">Confimar senha</label>
+              </div>
+
+              <div class="d-grid gap-2">
+              <%= form.submit "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup" %>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-75 rounded-4 shadow-4"
+          alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+
