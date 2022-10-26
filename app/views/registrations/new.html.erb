@@ -38,22 +38,22 @@
             <h2 class="fw-bold mb-5">Registre-se!</h2>
             <form>
                 <div class="form-floating mb-4">
-                    <%= form.text_field :name,  class: "form-control", id: "usernick" %>
+                    <%= form.text_field :nome,  class: "form-control", id: "Nome" %>
                     <label class="form-label" for="usernick">Usuário</label>
                 </div>
 
               <div class="form-floating mb-4">
-                <%= form.text_field :email,  class: "form-control", id: "email" %>
+                <%= form.text_field :email,  class: "form-control", id: "Email" %>
                 <label class="form-label" for="email">Email</label>
               </div>
 
               <div class="form-floating mb-4">
-                <%= form.password_field :password,  class: "form-control", id: "password", onkeyup: "verifyPassword();" %>
+                <%= form.password_field :password,  class: "form-control", id: "Senha", onkeyup: "verifyPassword();" %>
                 <label class="form-label" for="password">Senha</label>
               </div>
 
               <div class="form-floating mb-4">
-              <%= form.password_field :password_confirmation,  class: "form-control", id: "password_confirmation", onkeyup: "verifyPassword();" %>
+              <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onkeyup: "verifyPassword();" %>
                 <label class="form-label" for="password_confirmation">Confimar senha</label>
               </div>
 
