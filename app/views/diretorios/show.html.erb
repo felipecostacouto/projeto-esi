@@ -35,7 +35,7 @@
 
       .list-group-item{
           margin-top:10px;
-          border-radius: none;
+          border-radius: 10px;
           background: #5E35B1;
           cursor: pointer;
           transition: all 0.01s ease-in-out;
@@ -116,10 +116,10 @@
 
       .open-button {
           border: 2px solid #6a95ea;
+          background-color: rgba(7, 8, 35, 0.7);
           border-radius: 10px;
           margin-top: 20px;
           margin-right: 20px;
-          background-color: rgba(7, 8, 35, 0.7);
           color: white;
           padding: 16px 20px;
           cursor: pointer;
@@ -128,17 +128,35 @@
           font-size: 20px;
       }
 
+      .side_buttons {
+          height: 100px;
+          width: 100px;
+          margin: 20px;
+          border: 2px solid #6a95ea;
+          background-color: rgba(7, 8, 35, 0.7);
+          border-radius: 30px;
+          color: white;
+      }
+
+      .containers_button_on_the_side {
+          width: 150px;
+          vertical-align: middle;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
       /* Add a red background color to the cancel button */
       .form-container .cancel {
           background-color: red;
       }
 
       /* Add some hover effects to buttons */
-      .form-container .open-button:hover {
+      .form-container .open-button:hover, .side_buttons:hover {
           opacity: 1;
       }
 
-      .open-button:hover {
+      .open-button:hover, .side_buttons:hover {
           opacity: 1;
           background-color: black;
       }
@@ -160,7 +178,21 @@
   <strong>Data Criação: </strong>
   <%= @diretorio.created_at.strftime("%d/%m/%y") %>
 </div>
-<div class="container d-flex justify-content-center">
+
+<div class="contain er d-flex justify-content-center">
+
+  <div class="containers_button_on_the_side">
+    <% if @diretorio.get_root_directory_id != @diretorio.id %>
+      <%= link_to diretorio_url(@diretorio_mapa.get_parent_directory(@diretorio.id), @diretorio) do %>
+          <button class="side_buttons" id="back_button">Back</button>
+      <% end %>
+    <% else %>
+
+    <% end %>
+  </div>
+
+
+<!--  Diretorio.find(DiretoriosMapa.where(child: @diretorio.id)[:parent])-->
 
   <div class="container-list">
     <ul class="list-group mt-3 mb-3 text-white">
@@ -172,17 +204,24 @@
     </ul>
   </div>
 
+  <div class="containers_button_on_the_side">
+<!--    <button class="side_buttons", id="next_button">....</button>-->
+  </div>
+
 </div>
 
 <div class="container-buttons d-flex justify-content-center">
 
   <%= link_to edit_diretorio_path(@diretorio) do %>
-    <button class="open-button" onclick="openForm()">Editar</button>
+    <button class="open-button">Editar</button>
   <% end %>
 
   <%= link_to new_diretorio_path(:diretorio_parent_id => @diretorio.id) do %>
-    <button class="open-button" onclick="openForm()">Criar</button>
+    <button class="open-button">Criar</button>
   <% end %>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+</script>
 </body>
 </html>

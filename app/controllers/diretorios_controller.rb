@@ -8,6 +8,7 @@ class DiretoriosController < ApplicationController
 
   # GET /diretorios/1 or /diretorios/1.json
   def show
+    @diretorio_mapa = DiretoriosMapa.new
   end
 
   # GET /diretorios/new

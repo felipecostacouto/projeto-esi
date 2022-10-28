@@ -101,8 +101,8 @@
   <div class="container-list">
     <ul class="list-group mt-3 mb-3 text-white">
 
-      <% DiretoriosMapa.where(parent: Diretorio.where(name: 'root').ids[0]).each do |diretorios_in_root| %>
-        <%= render Diretorio.where(id: diretorios_in_root.child) %>
+      <% DiretoriosMapa.where(parent: Diretorio.where(name: 'root').ids[0]).each do |diretorio_in_root| %>
+        <%= render Diretorio.where(id: diretorio_in_root.child) %>
       <% end %>
 
     </ul>
