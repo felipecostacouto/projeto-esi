@@ -11,5 +11,8 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe DiretoriosMapasHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  def get_directories_in_root
+    return DiretoriosMapa.where(parent: Diretorio.where(name: 'root').ids[0])
+  end
 end
