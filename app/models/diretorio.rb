@@ -7,10 +7,28 @@ class Diretorio < ApplicationRecord
 
 
   def get_root_directory_id
-    Diretorio.where(name: 'root').ids[0]
+    @diretorio_root = Diretorio.where(name: 'root').ids[0]
+
+    if @diretorio_root == nil
+      create_root_directory.id
+    else
+      @diretorio_root
+    end
   end
 
   def get_root_directory
-    Diretorio.find(get_root_directory_id)
+    @root_id = get_root_directory_id
+
+    if @root_id == nil
+      create_root_directory
+    else
+      Diretorio.find(@root_id)
+    end
+  end
+
+  def create_root_directory
+    @diretorio_root = Diretorio.new({name: 'root', path: '/'})
+    @diretorio_root.save
+    @diretorio_root
   end
 end

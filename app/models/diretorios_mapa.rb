@@ -6,7 +6,9 @@ class DiretoriosMapa < ApplicationRecord
       @diretorio_mapa = DiretoriosMapa.find_by(child: directory_id)
 
       if @diretorio_mapa != nil
-        Diretorio.where(id: @diretorio_mapa[:parent])[0]
+        return Diretorio.where(id: @diretorio_mapa[:parent])[0]
+      else
+        return Diretorio.new.get_root_directory
       end
     end
   end

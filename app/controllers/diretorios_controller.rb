@@ -28,11 +28,18 @@ class DiretoriosController < ApplicationController
   def create
     @diretorio = Diretorio.new(diretorio_params)
 
+    @parent_id = params[:diretorio][:parent_ID]
+
     respond_to do |format|
       if @diretorio.save
-        @diretorio_mapa = DiretoriosMapa.new({:parent => params[:diretorio][:parent_ID], :child => @diretorio.id})
+        if @parent_id == nil or @parent_id == ""
+          @parent_id = @diretorio.id
+        end
+
+        @diretorio_mapa = DiretoriosMapa.new({:parent => @parent_id, :child => @diretorio.id})
+
         if @diretorio_mapa.save
-          format.html { redirect_to diretorio_url(Diretorio.find(params[:diretorio][:parent_ID])), notice: "Diretorio foi criado com sucesso." }
+          format.html { redirect_to diretorio_url(Diretorio.find(@parent_id)), notice: "Diretorio foi criado com sucesso." }
           format.json { render :show, status: :created, location: @diretorio }
         end
       else

@@ -182,8 +182,8 @@
 <div class="contain er d-flex justify-content-center">
 
   <div class="containers_button_on_the_side">
-    <% if @diretorio.get_root_directory_id != @diretorio.id %>
-      <%= link_to diretorio_url(@diretorio_mapa.get_parent_directory(@diretorio.id), @diretorio) do %>
+    <% if Diretorio.new.get_root_directory_id != @diretorio.id %>
+      <%= link_to diretorio_url(@diretorio_mapa.get_parent_directory(@diretorio.id).id) do %>
           <button class="side_buttons" id="back_button">Back</button>
       <% end %>
     <% else %>
