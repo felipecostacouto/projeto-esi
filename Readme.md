@@ -34,3 +34,10 @@ Executar os seguintes para certificar que está tudo certo:
 1) docker compose exec web rake spec
 
 2) docker compose exec web rake cucumber
+
+
+Para inicializar os registros padrões do bando de dados, executar
+
+1) rake db:migrate:reset
+
+2) rake db:seed_fu
