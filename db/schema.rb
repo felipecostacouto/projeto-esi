@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_19_230530) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_07_030728) do
+  create_table "buscars", force: :cascade do |t|
+    t.string "search_input"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "diretorios", force: :cascade do |t|
     t.string "name"
     t.string "path"
