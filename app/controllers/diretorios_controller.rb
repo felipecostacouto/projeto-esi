@@ -73,6 +73,14 @@ class DiretoriosController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def delete_diretorio
+    Diretorio.destroy(params[:id])
+
+    respond_to do |format|
+      format.html { redirect_to diretorios_url, notice: "Diretorio foi excluido com sucesso." }
+      format.json { head :no_content }
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

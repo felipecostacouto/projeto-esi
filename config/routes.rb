@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :diretorios
+  resources :diretorios do
+    member do
+      delete :delete_diretorio
+    end
+  end
   get 'welcome/login', as: :login
   get 'welcome/signup', as: :signup
   get 'welcome/index', as: :menu
