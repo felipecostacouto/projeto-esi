@@ -1,5 +1,8 @@
 <section class="text-center text-lg-start centered">
   <style>
+    body{
+      background: #1a0c50;
+    }
     .cascading-right {
       margin-right: -50px;
     }
@@ -11,17 +14,47 @@
     }
   </style>
   <script>
-  function verifyPassword(){
-    var password = document.getElementById("password").value;
-    var password_confirmation = document.getElementById("password_confirmation").value;
-    var btnSignup = document.getElementById("btnSignup");
-    if(password == password_confirmation){   
-      btnSignup.disabled = false;
-      btnSignup.style.background = '#0d6efd';
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  let hasName = false;
+  let hasPassword = false;
+  let hasConfirmation = false;
+  let hasEmail = false;
+  function checkSubmit(){
+    if(hasName && hasPassword && hasConfirmation && hasEmail) document.getElementById("btnSignup").disabled = false;
+    else document.getElementById("btnSignup").disabled = true;
+  }
+  function verifyEmail(){
+    let emailvalue = document.getElementById("Email").value;
+    if(document.getElementById("Email").value != "" && emailvalue.includes("@usp.br") && emailPattern.test(emailvalue)){
+      hasEmail = true;
+      checkSubmit();
     }else{
-      btnSignup.disabled = true;
-      btnSignup.style.background = 'red';
+      hasEmail = false;
+      checkSubmit();
     }
+  }
+  function verifyName(){
+    if(document.getElementById("Nome").value != ""){
+      hasName = true;
+      checkSubmit();
+    }else{
+      hasName = false;
+      checkSubmit();
+    }
+  }
+  function verifyPassword(){
+    var password = document.getElementById("Senha");
+    var password_confirmation = document.getElementById("Confirmacao");
+    var btnSignup = document.getElementById("btnSignup");
+    if(password.value != "" && password.value == password_confirmation.value){   
+      hasPassword = true;
+      hasConfirmation = true;
+      checkSubmit();
+    }else{
+      hasPassword = false;
+      hasConfirmation = false;
+      checkSubmit();
+    } 
   }
   </script>
   
@@ -38,27 +71,27 @@
             <h2 class="fw-bold mb-5">Registre-se!</h2>
             <form>
                 <div class="form-floating mb-4">
-                    <%= form.text_field :nome,  class: "form-control", id: "Nome" %>
+                    <%= form.text_field :nome,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
                     <label class="form-label" for="usernick">Usuário</label>
                 </div>
 
               <div class="form-floating mb-4">
-                <%= form.text_field :email,  class: "form-control", id: "Email" %>
+                <%= form.email_field :email,  class: "form-control", id: "Email", onchange: "verifyEmail();" %>
                 <label class="form-label" for="email">Email</label>
               </div>
 
               <div class="form-floating mb-4">
-                <%= form.password_field :password,  class: "form-control", id: "Senha", onkeyup: "verifyPassword();" %>
+                <%= form.password_field :password,  class: "form-control", id: "Senha", onchange: "verifyPassword();" %>
                 <label class="form-label" for="password">Senha</label>
               </div>
 
               <div class="form-floating mb-4">
-              <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onkeyup: "verifyPassword();" %>
+                <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onchange: "verifyPassword();" %>
                 <label class="form-label" for="password_confirmation">Confimar senha</label>
               </div>
 
               <div class="d-grid gap-2">
-              <%= form.submit "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup" %>
+                <%= form.button "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup", onclick: "checkSubmit();" %>
               </div>
 
             </form>

@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'login', to: 'registrations#login'
   post 'signup', to: 'registrations#create'
   delete 'logout', to: 'sessions#destroy'
-  resources :users, except: [:new]
+  resources :registrations
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
