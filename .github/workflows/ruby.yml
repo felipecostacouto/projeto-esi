@@ -35,8 +35,8 @@ jobs:
         ruby-version: '3.1.2'
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-    - name: Migrations Test
-      run: rails db:migrate RAILS_ENV=test
+    - name: Migrations Prod
+      run: rails db:migrate
     - name: Run tests
       run: bundle exec rake
 
@@ -46,8 +46,7 @@ jobs:
         github-token: ${{ secrets.github_token }}
         flag-name: run-${{ matrix.test_number }}
         parallel: true
-    - name: Migrations Prod
-      run: rails db:migrate
+    
 
   coveralls:
     name: coveralls-finish
