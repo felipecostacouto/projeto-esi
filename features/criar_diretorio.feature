@@ -8,17 +8,17 @@ Eu quero criar diretórios para melhor organização
 Cenário: Criação de Diretório com sucesso
 Dado que estou na página de criação de diretórios
 E preencho os campos com informações válidas
-E clico em salvar
+E clico em salvar na página de Criação de diretórios
 Então um novo diretório deve ser criado
 
 Cenário: Criação de Diretório com erro - sem nome
   Dado que estou na página de criação de diretórios
   E não preencho o nome
-  E clico em salvar
+  E clico em salvar na página de Criação de diretórios
   Então deverei ver a mensagem de erro "É obrigatório informar o nome!"
 
 Cenário: Criação de Diretório com erro - nome inválido
   Dado que estou na página de criação de diretórios
   E preencho o campo nome com "ESI?*?"
-  E clico em salvar
+  E clico em salvar na página de Criação de diretórios
   Então deverei ver a mensagem de erro "Nome inválido. Não é permitido a utilização dos caracteres especiais"
