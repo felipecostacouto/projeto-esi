@@ -37,10 +37,12 @@ jobs:
 
     - name: Install dependencies
       run: bundle install
-    - name: Migrations Prod
-      run: rake db:migrate
+    - name: Migrations Test 
+      run: rake db:migrate RAILS_ENV=test
     - name: Run tests
       run: bundle exec rake
+    - name: Migrations Prod
+      run: rake db:migrate
 
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master
