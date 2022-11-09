@@ -1,6 +1,6 @@
 root:
   name: root
-  path: ''
+  path: '/'
 
 teste:
   name: Teste
