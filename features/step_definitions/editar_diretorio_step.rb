@@ -2,13 +2,13 @@ Dado('que estou na página de listagem de diretórios') do
   visit '/diretorios'
 end
 
-E ('clico em "Teste"') do
-  click_on 'Teste'
+E ('clico em "Administração"') do
+  click_on 'Administração'
 end
 
 E ('clico em "Editar"') do
   click_link_or_button('edit-button')
-  visit '/diretorios/2/edit'
+  visit '/diretorios/3/edit'
 end
 
 Então ('acesso a página de Edição do Diretório') do
