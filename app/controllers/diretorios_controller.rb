@@ -35,7 +35,8 @@ class DiretoriosController < ApplicationController
     respond_to do |format|
       if @diretorio.save
         if @parent_id == nil or @parent_id == ""
-          @parent_id = Diretorio.find_by(name: 'root').id
+          @root = Diretorio.find_by(name: 'root')
+          @parent_id = @root.id
         end
 
         @diretorio_mapa = DiretoriosMapa.new({:parent => @parent_id, :child => @diretorio.id})
