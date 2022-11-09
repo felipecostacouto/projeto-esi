@@ -59,7 +59,7 @@
   </script>
   
   <% if @User.errors.any? %>
-  <div id="error_explanation">
+  <div id="error_explanation" style="background: white;">
     <h2><%= pluralize(@User.errors.count, "erro") %> impedem que o usuário sejam gravados no banco de dados:</h2>
  
     <ul>
@@ -83,7 +83,7 @@
             <h2 class="fw-bold mb-5">Registre-se!</h2>
             <form>
                 <div class="form-floating mb-4">
-                    <%= form.text_field :nome,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
+                    <%= form.text_field :name,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
                     <label class="form-label" for="usernick">Usuário</label>
                 </div>
 

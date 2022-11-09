@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
+  
   it 'invalido sem nome' do
     user = User.new(email: "teste@gmail.com")
     expect(user).not_to be_valid
