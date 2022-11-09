@@ -27,7 +27,9 @@ class DiretoriosController < ApplicationController
   # POST /diretorios or /diretorios.json
   def create
     @diretorio = Diretorio.new(diretorio_params)
-
+    if(@diretorio.created_at == nil)
+      @diretorio.created_at = Time.now
+    end
     @parent_id = params[:diretorio][:parent_ID]
 
     respond_to do |format|
