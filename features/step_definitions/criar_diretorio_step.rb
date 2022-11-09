@@ -3,7 +3,7 @@ Dado('que estou na página de criação de diretórios') do
 end
 
 Quando('preencho os campos com informações válidas') do
-  fill_in 'Nome', :with => 'ESI'
+  fill_in('diretorio_name', with:'ESI')
   page.select('root', from: 'diretorio_path', visible: false)
 end
 
