@@ -3,20 +3,17 @@ Dado('que estou na página de criação de diretórios') do
 end
 
 Quando('preencho os campos com informações válidas') do
-  fill_in 'Nome', :with => 'ESI'
+  fill_in('diretorio_name', with:'ESI')
+  page.select('root', from: 'diretorio_path', visible: false)
 end
 
-Quando('clico em salvar') do
+Quando('clico em salvar na página de Criação de diretórios') do
   click_on 'Salvar Diretório'
-  diretorio = Diretorio.last
 end
 
 Então('um novo diretório deve ser criado') do
-  ##diretorio = Diretorio.last
-
-  ##expect(diretorio.name).to eq('ESI')
-  ##expect(diretorio.path).to eq('/root/Administração')
   expect(page).to have_content('ESI')
+  expect(page).to have_content('/root')
 end
 
 Então('deve ser listado') do
@@ -25,11 +22,11 @@ Então('deve ser listado') do
 end
 
 Dado('não preencho o nome') do
-  fill_in 'Nome', :with =>''
+  fill_in 'Nome', :with => ''
 end
 
 Dado('preencho o campo nome com "ESI?*?"') do
-  fill_in 'Nome', :with =>'ESI?*?'
+  fill_in 'Nome', :with => 'ESI?*?'
 end
 
 Então('deverei ver a mensagem de erro "É obrigatório informar o nome!"') do

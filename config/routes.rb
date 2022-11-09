@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :diretorios
+  resources :diretorios do
+    member do
+      delete :delete_diretorio
+    end
+  end
 
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
