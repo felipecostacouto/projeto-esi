@@ -4,10 +4,6 @@ Rails.application.routes.draw do
       delete :delete_diretorio
     end
   end
-  get 'welcome/login', as: :login
-  get 'welcome/signup', as: :signup
-  get 'welcome/index', as: :menu
-  resources :diretorios
 
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
