@@ -68,7 +68,7 @@ RSpec.describe "/diretorios", type: :request do
 
       it "redirects to the created diretorio" do
         post diretorios_url, params: { diretorio: valid_attributes }
-        expect(response).to redirect_to(diretorio_url(Diretorio.last))
+        expect(response).to redirect_to(diretorio_url(DiretoriosMapa.last.parent))
       end
     end
 
