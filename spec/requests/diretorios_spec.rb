@@ -125,6 +125,13 @@ RSpec.describe "/diretorios", type: :request do
       }.to change(Diretorio, :count).by(-1)
     end
 
+    it "destroys the requested diretorio using alternative route" do
+      diretorio = Diretorio.create! valid_attributes
+      expect {
+        delete delete_diretorio_diretorio_url(diretorio)
+      }.to change(Diretorio, :count).by(-1)
+    end
+
     it "redirects to the diretorios list" do
       diretorio = Diretorio.create! valid_attributes
       delete diretorio_url(diretorio)
