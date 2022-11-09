@@ -1,6 +1,6 @@
 class DiretoriosController < ApplicationController
   before_action :set_diretorio, only: %i[ show edit update destroy ]
-
+  $rootId = 1
   # GET /diretorios or /diretorios.json
   def index
     @diretorios = Diretorio.where.not(name: 'root')
@@ -27,13 +27,15 @@ class DiretoriosController < ApplicationController
   # POST /diretorios or /diretorios.json
   def create
     @diretorio = Diretorio.new(diretorio_params)
-
+    if(@diretorio.created_at == nil)
+      @diretorio.created_at = Time.now
+    end
     @parent_id = params[:diretorio][:parent_ID]
 
     respond_to do |format|
       if @diretorio.save
         if @parent_id == nil or @parent_id == ""
-          @parent_id = @diretorio.id
+          @parent_id = $rootId
         end
 
         @diretorio_mapa = DiretoriosMapa.new({:parent => @parent_id, :child => @diretorio.id})
