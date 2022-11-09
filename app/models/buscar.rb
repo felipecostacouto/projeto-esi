@@ -1,3 +1,3 @@
 class Buscar < ApplicationRecord
-    validates :search_input, {presence: "É obrigatório digitar o nome para buscar!"}
+    validates :search_input, presence: { message: "É obrigatório informar o nome do diretório para busca!" }
 end
