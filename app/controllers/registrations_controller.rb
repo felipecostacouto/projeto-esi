@@ -4,7 +4,6 @@ end
 
 def new
   @User = User.new
-  @Users = User.all
 end
 
 def create
@@ -13,7 +12,8 @@ def create
     session[:user_id] = @User.id
     redirect_to root_path
   else
-    flash[:notice] = "Erro"
+    render :new, status: :unprocessable_entity, content_type: "text/html"
+    headers["Content-Type"] = "text/html"
   end
 end
 
