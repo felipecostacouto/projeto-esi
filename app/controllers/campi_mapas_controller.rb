@@ -1,0 +1,3 @@
+class CampiMapasController < ApplicationController
+
+end

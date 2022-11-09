@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
   get 'login', to: 'registrations#login'
+  get 'campi', to: 'campi#index'
   post 'signup', to: 'registrations#create'
   delete 'logout', to: 'sessions#destroy'
   resources :registrations
