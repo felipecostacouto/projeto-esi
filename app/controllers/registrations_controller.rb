@@ -4,6 +4,7 @@ end
 
 def new
   @User = User.new
+  @Users = User.all
 end
 
 def create

@@ -8,34 +8,40 @@ Cenário: Cadastro de usuário com sucesso
     Dado que estou na página de cadastro
     Quando preencho o campo "Nome" com "Cesar Ouchi"
     Quando preencho o campo "Email" com "cesar-kenzo@usp.br"
+    Quando preencho o campo "Senha" com "123"
+    Quando preencho o campo "Confirmacao" com "123"
     E clico em registrar
-    Então ele deve ter sido salvo no banco de dados
-    E deverei ser redirecionado a página Home
+    Então deverei ser redirecionado a página Home
+    E ele deve ter sido salvo no banco de dados
 
 Cenário: Cadastro de usuário com erro - sem nome
-    Dado que estou na página de cadastro de aluno
+    Dado que estou na página de cadastro
     Quando preencho o campo "Email" com "cesar-kenzo@usp.br"
+    Quando preencho o campo "Senha" com "123"
+    Quando preencho o campo "Confirmacao" com "123"
     E deixo o campo "Nome" vazio
-    E clico em registrar
-    Então deverei ver a mensagem de erro "É obrigatório informar o nome!"
+    Então o botão registrar deve estar desabilitado
 
 Cenário: Cadastro de usuário com erro - sem e-mail
-    Dado que estou na página de cadastro de aluno
+    Dado que estou na página de cadastro
     Quando preencho o campo "Nome" com "Cesar Ouchi"
+    Quando preencho o campo "Senha" com "123"
+    Quando preencho o campo "Confirmacao" com "123"
     E deixo o campo "Email" vazio
-    E clico em registrar
-    Então deverei ver a mensagem de erro "É obrigatório informar o email!"
+    Então o botão registrar deve estar desabilitado
 
 Cenário: Cadastro de usuário com erro - e-mail inválido
-    Dado que estou na página de cadastro de aluno
+    Dado que estou na página de cadastro
     Quando preencho o campo "Nome" com "Cesar Ouchi"
+    Quando preencho o campo "Senha" com "123"
+    Quando preencho o campo "Confirmacao" com "123"
     E preencho o campo "Email" com "cesar-kenzo-usp@hotmail.com"
-    E clico em registrar
-    Então deverei ver a mensagem de erro "Email inválido. Não é do Domínio da USP!"
+    Então o botão registrar deve estar desabilitado
 
 Cenário: Cadastro de usuário com erro - e-mail inválido
-    Dado que estou na página de cadastro de aluno
+    Dado que estou na página de cadastro
     Quando preencho o campo "Nome" com "Cesar Ouchi"
+    Quando preencho o campo "Senha" com "123"
+    Quando preencho o campo "Confirmacao" com "123"
     E preencho o campo "Email" com "ce@^dd@hotmail.com"
-    E clico em registrar
-    Então deverei ver a mensagem de erro "Formato de e-mail Inválido"
+    Então o botão registrar deve estar desabilitado
