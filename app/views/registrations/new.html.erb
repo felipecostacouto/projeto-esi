@@ -1,0 +1,123 @@
+<section class="text-center text-lg-start centered">
+  <style>
+    body{
+      background: #1a0c50;
+    }
+    .cascading-right {
+      margin-right: -50px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+  <script>
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  let hasName = false;
+  let hasPassword = false;
+  let hasConfirmation = false;
+  let hasEmail = false;
+  function checkSubmit(){
+    if(hasName && hasPassword && hasConfirmation && hasEmail) document.getElementById("btnSignup").disabled = false;
+    else document.getElementById("btnSignup").disabled = true;
+  }
+  function verifyEmail(){
+    let emailvalue = document.getElementById("Email").value;
+    if(document.getElementById("Email").value != "" && emailvalue.includes("@usp.br") && emailPattern.test(emailvalue)){
+      hasEmail = true;
+      checkSubmit();
+    }else{
+      hasEmail = false;
+      checkSubmit();
+    }
+  }
+  function verifyName(){
+    if(document.getElementById("Nome").value != ""){
+      hasName = true;
+      checkSubmit();
+    }else{
+      hasName = false;
+      checkSubmit();
+    }
+  }
+  function verifyPassword(){
+    var password = document.getElementById("Senha");
+    var password_confirmation = document.getElementById("Confirmacao");
+    var btnSignup = document.getElementById("btnSignup");
+    if(password.value != "" && password.value == password_confirmation.value){   
+      hasPassword = true;
+      hasConfirmation = true;
+      checkSubmit();
+    }else{
+      hasPassword = false;
+      hasConfirmation = false;
+      checkSubmit();
+    } 
+  }
+  </script>
+  
+  <% if @User.errors.any? %>
+  <div id="error_explanation" style="background: white;">
+    <h2><%= pluralize(@User.errors.count, "erro") %> impedem que o usuário sejam gravados no banco de dados:</h2>
+ 
+    <ul>
+    <% @User.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <%= form_with model: @User, url: signup_path do |form| %>
+  <p style="color: green"><%= notice %></p>
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Registre-se!</h2>
+            <form>
+                <div class="form-floating mb-4">
+                    <%= form.text_field :name,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
+                    <label class="form-label" for="usernick">Usuário</label>
+                </div>
+
+              <div class="form-floating mb-4">
+                <%= form.email_field :email,  class: "form-control", id: "Email", onchange: "verifyEmail();" %>
+                <label class="form-label" for="email">Email</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <%= form.password_field :password,  class: "form-control", id: "Senha", onchange: "verifyPassword();" %>
+                <label class="form-label" for="password">Senha</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onchange: "verifyPassword();" %>
+                <label class="form-label" for="password_confirmation">Confimar senha</label>
+              </div>
+
+              <div class="d-grid gap-2">
+                <%= form.button "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup", onclick: "checkSubmit();" %>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-75 rounded-4 shadow-4"
+          alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+

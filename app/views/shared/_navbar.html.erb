@@ -31,10 +31,17 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex text-white" role="search">         
-          <%= link_to '<i class="bi bi-box-arrow-in-right me-2"></i>Login' .html_safe, login_path, class: "nav-link active me-3" %>
-          <%= link_to '<i class="bi bi-door-open me-2"></i>Cadastro' .html_safe, signup_path, class: "nav-link active me-3" %>
+      <form class="d-flex text-white" role="search">
+          <% if Current.user %>
+            Logged in as: <%= Current.user.email %>
+          <% else %>       
+            <%= link_to '<i class="bi bi-box-arrow-in-right me-2"></i>Login' .html_safe, login_path, class: "nav-link active me-3" %>
+            <%= link_to '<i class="bi bi-door-open me-2"></i>Cadastro' .html_safe, signup_path, class: "nav-link active me-3" %>
+          <% end %>  
       </form>
+      <% if not !Current.user %>
+      <%= button_to "Destroy", logout_path, method: :delete %>
+      <% end %>
     </div>
   </div>
 </nav>
