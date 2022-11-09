@@ -174,10 +174,6 @@
   <strong>Caminho: </strong>
   <%= @diretorio.path %>
 </div>
-<div class="container d-flex justify-content-center" style="color: white">
-  <strong>Data Criação: </strong>
-  <%= @diretorio.created_at.strftime("%d/%m/%y") %>
-</div>
 
 <div class="contain er d-flex justify-content-center">
 
@@ -213,7 +209,7 @@
 <div class="container-buttons d-flex justify-content-center">
 
   <%= link_to edit_diretorio_path(@diretorio) do %>
-    <button class="open-button">Editar</button>
+    <button id="edit-button" class="open-button">Editar</button>
   <% end %>
 
   <%= link_to new_diretorio_path(:diretorio_parent_id => @diretorio.id) do %>

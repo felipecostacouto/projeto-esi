@@ -27,13 +27,15 @@ class DiretoriosController < ApplicationController
   # POST /diretorios or /diretorios.json
   def create
     @diretorio = Diretorio.new(diretorio_params)
-
+    if(@diretorio.created_at == nil)
+      @diretorio.created_at = Time.now
+    end
     @parent_id = params[:diretorio][:parent_ID]
 
     respond_to do |format|
       if @diretorio.save
         if @parent_id == nil or @parent_id == ""
-          @parent_id = @diretorio.id
+          @parent_id = Diretorio.find_by(name: 'root').id
         end
 
         @diretorio_mapa = DiretoriosMapa.new({:parent => @parent_id, :child => @diretorio.id})
@@ -67,6 +69,14 @@ class DiretoriosController < ApplicationController
   # DELETE /diretorios/1 or /diretorios/1.json
   def destroy
     @diretorio.destroy
+
+    respond_to do |format|
+      format.html { redirect_to diretorios_url, notice: "Diretorio foi excluido com sucesso." }
+      format.json { head :no_content }
+    end
+  end
+  def delete_diretorio
+    Diretorio.destroy(params[:id])
 
     respond_to do |format|
       format.html { redirect_to diretorios_url, notice: "Diretorio foi excluido com sucesso." }
