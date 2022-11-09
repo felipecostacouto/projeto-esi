@@ -8,6 +8,9 @@
 # USP Share
 A [USP Share](https://projeto-esi-heroku.herokuapp.com/) é uma aplicação web voltada para o compartilhamento entre alunos de arquivos, resumos, anotações, mapas mentais e materiais de matérias ministradas na USP, separado por campus e curso.
 
+# Pivotal Tracker
+[Link para o pivotal Tracker](https://www.pivotaltracker.com/n/projects/2603039)
+
 # Membros
 Beatriz Abreu
 
