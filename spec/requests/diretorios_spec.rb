@@ -68,7 +68,7 @@ RSpec.describe "/diretorios", type: :request do
 
       it "redirects to the created diretorio" do
         post diretorios_url, params: { diretorio: valid_attributes }
-        expect(response).to redirect_to(diretorio_url(Diretorio.last))
+        expect(response).to redirect_to(diretorio_url(DiretoriosMapa.last.parent))
       end
     end
 
@@ -122,6 +122,13 @@ RSpec.describe "/diretorios", type: :request do
       diretorio = Diretorio.create! valid_attributes
       expect {
         delete diretorio_url(diretorio)
+      }.to change(Diretorio, :count).by(-1)
+    end
+
+    it "destroys the requested diretorio using alternative route" do
+      diretorio = Diretorio.create! valid_attributes
+      expect {
+        delete delete_diretorio_diretorio_url(diretorio)
       }.to change(Diretorio, :count).by(-1)
     end
 

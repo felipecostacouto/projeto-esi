@@ -1,3 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      body{
+          background: #1a0c50;
+      }
+      .button {
+          border: 2px solid #6a95ea;
+          background-color: rgba(7, 8, 35, 0.7);
+          border-radius: 10px;
+          margin-top: 20px;
+          margin-right: 20px;
+          color: white;
+          padding: 16px 20px;
+          cursor: pointer;
+          opacity: 0.8;
+          width: 140px;
+          font-size: 12px;
+          text-decoration: none;
+      }
+      .link-text{
+          text-decoration:none;
+          color:white;
+      }
+  </style>
+</head>
+<body class="text-white">
 <p style="color: green"><%= notice %></p>
 
 <h1><icon class="bi bi-folder"></icon> Diretorios</h1>
@@ -5,10 +37,12 @@
 <div id="diretorios">
   <% @diretorios.each do |diretorio| %>
     <p>
+      <%= link_to '', delete_diretorio_diretorio_url(diretorio.id), class:"bi bi-trash link-text", data: { "turbo_confirm": 'Tem certeza?', "turbo-method": :delete }%>
       <icon class="bi bi-folder"/>
-      <%= link_to diretorio.name, diretorio %>
+      <%= link_to diretorio.name, diretorio, class:"link-text" %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "Criar Diretório", new_diretorio_path %>
+<br/>
+<%= link_to "Criar Diretório", new_diretorio_path, class: "button" %>
+</body>

@@ -8,6 +8,9 @@
 # USP Share
 A [USP Share](https://projeto-esi-heroku.herokuapp.com/) é uma aplicação web voltada para o compartilhamento entre alunos de arquivos, resumos, anotações, mapas mentais e materiais de matérias ministradas na USP, separado por campus e curso.
 
+# Pivotal Tracker
+[Link](https://www.pivotaltracker.com/n/projects/2603039)
+
 # Membros
 Beatriz Abreu
 
@@ -34,3 +37,10 @@ Executar os seguintes para certificar que está tudo certo:
 1) docker compose exec web rake spec
 
 2) docker compose exec web rake cucumber
+
+
+Para inicializar os registros padrões do bando de dados, executar
+
+1) rake db:migrate:reset
+
+2) rake db:seed_fu
