@@ -6,7 +6,7 @@ Funcionalidade: Editar diretório
 
   Cenário: Edição de Diretório com sucesso
     Dado que estou na página de listagem de diretórios
-    E clico em "Teste"
+    E clico em "Administração"
     E clico em "Editar"
     Então acesso a página de Edição do Diretório
     E preencho os campos com informações válidas
@@ -15,7 +15,7 @@ Funcionalidade: Editar diretório
 
   Cenário: Edição de Diretório com erro - sem nome
     Dado que estou na página de listagem de diretórios
-    E clico em "Teste"
+    E clico em "Administração"
     E clico em "Editar"
     Então acesso a página de Edição do Diretório
     E preencho o nome com ""
@@ -24,7 +24,7 @@ Funcionalidade: Editar diretório
 
   Cenário: Edição de Diretório com erro - nome inválido
     Dado que estou na página de listagem de diretórios
-    E clico em "Teste"
+    E clico em "Administração"
     E clico em "Editar"
     Então acesso a página de Edição do Diretório
     E preencho o campo nome com "*ESI"
