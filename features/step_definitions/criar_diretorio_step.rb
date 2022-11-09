@@ -4,7 +4,7 @@ end
 
 Quando('preencho os campos com informações válidas') do
   fill_in('diretorio_name', with:'ESI')
-  page.select('root', from: 'diretorio_path', visible: false)
+  #page.select('root', from: 'diretorio_path', visible: false)
 end
 
 Quando('clico em salvar na página de Criação de diretórios') do
@@ -13,7 +13,7 @@ end
 
 Então('um novo diretório deve ser criado') do
   expect(page).to have_content('ESI')
-  expect(page).to have_content('/root')
+  #expect(page).to have_content('/root')
 end
 
 Então('deve ser listado') do
