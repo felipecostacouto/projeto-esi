@@ -38,7 +38,7 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Migrations Prod
-      run: rails db:migrate
+      run: rake db:migrate
     - name: Run tests
       run: bundle exec rake
 
