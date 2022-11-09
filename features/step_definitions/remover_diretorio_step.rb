@@ -11,6 +11,6 @@ E('confirmo a remoção do Diretório') do
   #page.driver.submit :delete, '/diretorios/2/delete_diretorio', {}
 end
 
-Então('o Diretório "Administração" não deve estar na lista') do
-  expect(page).not_to have_content('Administração')
+Então('o Diretório "Teste" não deve estar na lista') do
+  expect(page).not_to have_content('Teste')
 end
