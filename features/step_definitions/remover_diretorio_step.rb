@@ -1,6 +1,5 @@
-E('verifico que o Diretório "Teste" existe') do
-  expect(page).to have_content('Teste')
-  expect(page).to have_content('Teste')
+E('verifico que o Diretório "Administração" existe') do
+  expect(page).to have_content('Administração')
 end
 
 E('clico no ícone de Lixeira') do
