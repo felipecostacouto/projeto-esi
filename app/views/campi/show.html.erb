@@ -178,8 +178,8 @@
 <div class="contain er d-flex justify-content-center">
 
   <div class="containers_button_on_the_side">
-    <% if Diretorio.new.get_root_directory_id != @campi.id %>
-      <%= link_to diretorio_url(@campi_mapa.get_parent_directory(@campi.id).id) do %>
+    <% if Campi.new.get_root_campi_id != @campi.id %>
+      <%= link_to campi_url(@campi_mapa.get_parent_campi(@campi.id).id) do %>
           <button class="side_buttons" id="back_button">Back</button>
       <% end %>
     <% else %>
