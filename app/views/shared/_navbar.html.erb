@@ -9,6 +9,9 @@
         <li class="nav-item">
         <%= link_to '<i class="bi bi-house-door"></i> Menu' .html_safe, menu_path, class: "nav-link active" %>
         </li>
+        <li class="nav-item">
+        <%= link_to '<i class="bi bi-search"></i> Buscar' .html_safe, buscar_path, class: "nav-link active me-3" %>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-book"></i>
@@ -46,7 +49,7 @@
           <% else %>       
             <%= link_to '<i class="bi bi-box-arrow-in-right me-2"></i>Login' .html_safe, login_path, class: "nav-link active me-3" %>
             <%= link_to '<i class="bi bi-door-open me-2"></i>Cadastro' .html_safe, signup_path, class: "nav-link active me-3" %>
-          <% end %>  
+          <% end %>
       </form>
       <% if not !Current.user %>
       <%= button_to "Destroy", logout_path, method: :delete %>
