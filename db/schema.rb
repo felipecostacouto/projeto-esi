@@ -31,4 +31,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_07_030728) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "campis", force: :cascade do |t|
+    t.string "name"
+    t.string "path"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "campis_mapas", force: :cascade do |t|
+    t.integer "parent"
+    t.integer "child"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
