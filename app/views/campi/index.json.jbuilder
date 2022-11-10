@@ -1,1 +1,1 @@
-json.array! @campi, partial: "campi/diretorio", as: :campi
+json.array! @campi, partial: "campis/campi", as: :campi
