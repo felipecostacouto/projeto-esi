@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :subjects
   resources :diretorios do
     member do
       delete :delete_diretorio
