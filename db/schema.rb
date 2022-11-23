@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_07_030728) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_23_022850) do
   create_table "buscars", force: :cascade do |t|
     t.string "search_input"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "campis", force: :cascade do |t|
+    t.string "name"
+    t.string "path"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "campis_mapas", force: :cascade do |t|
+    t.integer "parent"
+    t.integer "child"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,16 +45,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_07_030728) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "campis", force: :cascade do |t|
+  create_table "subjects", force: :cascade do |t|
     t.string "name"
-    t.string "path"
+    t.string "teacher"
+    t.string "campi"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "campis_mapas", force: :cascade do |t|
-    t.integer "parent"
-    t.integer "child"
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
