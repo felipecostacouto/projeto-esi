@@ -10,4 +10,4 @@ Funcionalidade: Deletar diretório
     E verifico que o Diretório "Administração" existe
     E clico no ícone de Lixeira
     E confirmo a remoção do Diretório
-    Então o Diretório "Teste" não deve estar na lista
+    Então o Diretório "Administração" não deve estar na lista
