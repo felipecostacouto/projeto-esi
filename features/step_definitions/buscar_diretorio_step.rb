@@ -2,8 +2,8 @@ Dado('que estou na página de busca de diretórios') do
   visit '/welcome/buscar'
 end
 
-Quando('preencho o campo search_input com "ESI"') do
-    fill_in 'search_input', :with => 'ESI'
+Quando('preencho o campo buscar com "root"') do
+    fill_in 'buscar', :with => 'root'
 end
 
 Quando('clico em Buscar') do
@@ -11,29 +11,29 @@ Quando('clico em Buscar') do
 end
 
 Então('deverei ver o diretório buscado na página buscar') do
-  expect(page).to have_content('ESI')
+  expect(page).to have_content('root')
 end
 
-Dado('não preencho o search_input') do
-  fill_in 'search_input', :with => ''
+Dado('não preencho o buscar') do
+  fill_in 'buscar', :with => ''
 end
 
-Dado('clico em Buscar') do
+Dado('clico em buscar') do
     click_on 'buscar'
 end
 
-Então('deverei ver a mensagem de erro "É obrigatório informar o nome do diretório para busca!"') do
-  expect(page).to have_content('É obrigatório informar o nome do diretório para busca!')
+Então('deverei ver a mensagem de erro "É obrigatório informar o nome!"') do
+  expect(page).to have_content('É obrigatório informar o nome!')
 end
 
-Quando('preencho o campo search_input com um valor inválido') do
-  fill_in 'search_input', :with => 'a!1ç....,,,´/ ? za'
+Quando('preencho o campo buscar com um valor inválido') do
+  fill_in 'buscar', :with => 'a!1ç....,,,´/ ? za'
 end
 
 Quando('clico em buscar') do
-  click_on 'Buscar'
+  click_on 'buscar'
 end
 
-Então('deverei ver a mensagem de erro "O Diretório que você está buscando não existe!"}') do
+Então('deverei ver a mensagem de erro "O Diretório que você está buscando não existe!"') do
     expect(page).to have_content('O Diretório que você está buscando não existe!')
 end
