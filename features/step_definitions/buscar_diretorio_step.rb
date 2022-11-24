@@ -22,10 +22,6 @@ Dado('clico em buscar') do
     click_on 'buscar'
 end
 
-Então('deverei ver a mensagem de erro "É obrigatório informar o nome!"') do
-  expect(page).to have_content('É obrigatório informar o nome!')
-end
-
 Quando('preencho o campo buscar com um valor inválido') do
   fill_in 'buscar', :with => 'a!1ç....,,,´/ ? za'
 end
