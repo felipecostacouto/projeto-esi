@@ -1,0 +1,12 @@
+<div id="<%= dom_id subject %>">
+  <%= link_to subject do %>
+    <li class="list-group-item d-flex justify-content-between align-content-center">
+      <div class="d-flex flex-row">
+        <i class="bi bi-book"></i>
+        <div class="ml-2">
+          <h6 class="mb-0"><%= subject.name %></h6>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</div>

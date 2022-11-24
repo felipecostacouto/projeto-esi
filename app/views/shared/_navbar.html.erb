@@ -14,23 +14,12 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-book"></i>
-            Matérias
-          </a>
-          <ul class="dropdown-menu bg-dark text-white">
-            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 1</a></li>
-            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 2</a></li>
-            <li><hr class="dropdown-divider text-white"></li>
-            <li><a class="dropdown-item text-white"><i class="bi bi-arrow-right-circle"></i> Matéria 3</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-pencil-square"></i>
             ADM
           </a>
           <ul class="dropdown-menu bg-dark text-white">
-            <li><%= link_to '<icon class="bi bi-folder"/>Diretórios' .html_safe, diretorios_path, class: "nav-link active" %></li>
+            <li><%= link_to '<icon class="bi bi-folder"/>  Diretórios' .html_safe, diretorios_path, class: "nav-link active" %></li>
+            <li><%= link_to '<icon class="bi bi-book"/>  Matérias' .html_safe, subjects_path, class: "nav-link active" %></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
