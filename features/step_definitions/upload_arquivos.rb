@@ -1,5 +1,5 @@
 When(/^que estou na página de um diretório específico$/) do
-  pending
+  visit 'upload_files/new'
 end
 
 When(/^arrasto um arquivo para onde estão os diretórios$/) do
