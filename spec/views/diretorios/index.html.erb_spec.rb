@@ -23,6 +23,21 @@ RSpec.describe "diretorios/index", type: :view do
         path: "Path"
       )
     ])
+
+    assign(:diretorios_mapa, [
+      DiretoriosMapa.create!(
+        parent: Diretorio.where(name: 'root').ids[0],
+        child: Diretorio.where(name: 'dir1').ids[0]
+      ),
+      DiretoriosMapa.create!(
+        parent: Diretorio.where(name: 'dir1').ids[0],
+        child: Diretorio.where(name: 'dir2').ids[0]
+      ),
+      DiretoriosMapa.create!(
+        parent: Diretorio.where(name: 'dir1').ids[0],
+        child: Diretorio.where(name: 'dir3').ids[0]
+      )
+    ])
   end
 
   it "renders a list of diretorios" do
