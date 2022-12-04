@@ -45,8 +45,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_04_170928) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "upload_files", force: :cascade do |t|
     t.integer "diretorio"
+=======
+  create_table "subjects", force: :cascade do |t|
+    t.string "name"
+    t.string "teacher"
+    t.string "campi"
+>>>>>>> 572b49d0e5915a43abe49208a7ba4c14c7b351e7
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

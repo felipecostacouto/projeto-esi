@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :subjects
   resources :diretorios do
     member do
       delete :delete_diretorio
@@ -16,7 +17,8 @@ Rails.application.routes.draw do
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :buscar_diretorio
-  get 'welcome/buscar', as: :buscar
+  get 'buscar', to: 'buscar#new'
+  post 'buscar', to: 'buscar#show'
   # Defines the root path route ("/")
   # root "articles#index"
   root 'welcome#index'

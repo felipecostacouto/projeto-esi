@@ -1,0 +1,12 @@
+<h1>Buscar Diretório</h1>
+
+<%= form_with model: @diretorio, url:buscar_path,local: true, data: { turbo: false } do |form| %>
+    <div class="mb-3">
+        <%= form.label :buscar %>
+        <%= form.text_field :name, class: "form-control", placeholder: "Digite o nome do Diretório Aqui" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit "buscar", class: "btn btn-primary"  %>
+    </div>
+<% end %>
