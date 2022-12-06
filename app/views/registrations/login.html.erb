@@ -19,12 +19,14 @@
       }
     }
   </style>
-
+<div class="errors">
   <% flash.each do |type, msg| %>
     <div class="alert alert-info">
       <%= msg %>
     </div>
   <% end %>
+</div>
+  
 
 <%= form_with model: @User, url: login_path do |form| %>
   <div class="card mb-3">

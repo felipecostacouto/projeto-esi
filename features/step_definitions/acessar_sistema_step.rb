@@ -1,5 +1,5 @@
 Dado('que estou na página de login') do
-    visit 'login'
+    visit login_path
   end
 
   Quando('preencho o campo Email com {string}') do |string|
@@ -11,7 +11,7 @@ Dado('que estou na página de login') do
   end
   
   Quando('clico em Acessar') do
-    click_button 'Acessar'
+    click_on 'Acessar'
   end
 
   Então('deverei ser redirecionado a página Inicial') do
@@ -19,5 +19,5 @@ Dado('que estou na página de login') do
   end
   
   Então('deverei ver a mensagem de erro {string} na tela de login') do |string|
-    expect(flash[:alert]).to eq(string)
+    page.should have_css('.errors')
   end
