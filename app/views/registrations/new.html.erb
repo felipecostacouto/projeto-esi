@@ -58,7 +58,7 @@
   }
   </script>
   
-  <% if @User.errors.any? %>
+<% if @User.errors.any? %>
   <div id="error_explanation" style="background: white;">
     <h2><%= pluralize(@User.errors.count, "erro") %> impedem que o usuário sejam gravados no banco de dados:</h2>
  
@@ -71,42 +71,41 @@
 <% end %>
 
   <%= form_with model: @User, url: signup_path do |form| %>
-  <p style="color: green"><%= notice %></p>
-  <div class="container py-4">
-    <div class="row g-0 align-items-center">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="card cascading-right" style="
+    <p style="color: green"><%= notice %></p>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card cascading-right" style="
             background: hsla(0, 0%, 100%, 0.55);
             backdrop-filter: blur(30px);
             ">
-          <div class="card-body p-5 shadow-5 text-center">
-            <h2 class="fw-bold mb-5">Registre-se!</h2>
-            <form>
+            <div class="card-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Registre-se!</h2>
+              <form>
                 <div class="form-floating mb-4">
-                    <%= form.text_field :name,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
-                    <label class="form-label" for="usernick">Usuário</label>
+                  <%= form.text_field :name,  class: "form-control", id: "Nome", onchange: "verifyName();" %>
+                  <label class="form-label" for="usernick">Usuário</label>
                 </div>
 
-              <div class="form-floating mb-4">
-                <%= form.email_field :email,  class: "form-control", id: "Email", onchange: "verifyEmail();" %>
-                <label class="form-label" for="email">Email</label>
-              </div>
+                <div class="form-floating mb-4">
+                  <%= form.email_field :email,  class: "form-control", id: "Email", onchange: "verifyEmail();" %>
+                  <label class="form-label" for="email">Email</label>
+                </div>
 
-              <div class="form-floating mb-4">
-                <%= form.password_field :password,  class: "form-control", id: "Senha", onchange: "verifyPassword();" %>
-                <label class="form-label" for="password">Senha</label>
-              </div>
+                <div class="form-floating mb-4">
+                  <%= form.password_field :password,  class: "form-control", id: "Senha", onchange: "verifyPassword();" %>
+                  <label class="form-label" for="password">Senha</label>
+                </div>
 
-              <div class="form-floating mb-4">
-                <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onchange: "verifyPassword();" %>
-                <label class="form-label" for="password_confirmation">Confimar senha</label>
-              </div>
+                <div class="form-floating mb-4">
+                  <%= form.password_field :password_confirmation,  class: "form-control", id: "Confirmacao", onchange: "verifyPassword();" %>
+                  <label class="form-label" for="password_confirmation">Confimar senha</label>
+                </div>
 
-              <div class="d-grid gap-2">
-                <%= form.button "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup", onclick: "checkSubmit();" %>
-              </div>
-
-            </form>
+                <div class="d-grid gap-2">
+                  <%= form.button "Registrar", class: "btn btn-primary btn-block mb-4", id: "btnSignup", onclick: "checkSubmit();" %>
+                </div>
+              </form>
           </div>
         </div>
       </div>
