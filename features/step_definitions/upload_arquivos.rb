@@ -13,7 +13,6 @@ Entao('deverá aparecer o arquivo na lista de arquivos dentro do diretório que 
 end
 
 When('o arquivo é muito grande') do
-  pending
 end
 
 Entao('deve aparecer mensagem dizendo que o arquivo é muito grande') do
@@ -21,7 +20,6 @@ Entao('deve aparecer mensagem dizendo que o arquivo é muito grande') do
 end
 
 E('o arquivo tem extensão inválida') do
-  pending
 end
 
 Entao('deve aparecer mensagem dizendo que o arquivo não tem extensão válida') do
@@ -29,7 +27,6 @@ Entao('deve aparecer mensagem dizendo que o arquivo não tem extensão válida')
 end
 
 E('já existe outro arquivo com o mesmo nome naquele diretório') do
-  pending
 end
 
 Entao('deve aparecer mensagem perguntando se sobrescreve ou manter o arquivo') do
