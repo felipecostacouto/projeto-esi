@@ -19,5 +19,5 @@ Dado('que estou na página de login') do
   end
   
   Então('deverei ver a mensagem de erro {string} na tela de login') do |string|
-    page.should have_css('.errors')
+    expect(page).to have_css('.errors')
   end
