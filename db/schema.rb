@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_23_022850) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_04_170928) do
   create_table "buscars", force: :cascade do |t|
     t.string "search_input"
     t.datetime "created_at", null: false
@@ -49,6 +49,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_022850) do
     t.string "name"
     t.string "teacher"
     t.string "campi"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "upload_files", force: :cascade do |t|
+    t.integer "diretorio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
