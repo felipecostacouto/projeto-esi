@@ -19,6 +19,16 @@
       }
     }
   </style>
+<div class="errors">
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
+</div>
+  
+
+<%= form_with model: @User, url: login_path do |form| %>
   <div class="card mb-3">
     <div class="row g-0 d-flex align-items-center">
       <div class="col-lg-4 d-none d-lg-flex">
@@ -30,13 +40,13 @@
 
           <form>
             <div class="form-floating mb-4">
-              <input type="email" id="form2Example1" class="form-control" />
-              <label class="form-label" for="form2Example1">Email</label>
+            <%= form.text_field :email,  class: "form-control", id: "Email" %>
+              <label class="form-label" for="Email">Email</label>
             </div>
 
             <div class="form-floating mb-4">
-              <input type="password" id="form2Example2" class="form-control" />
-              <label class="form-label" for="form2Example2">Senha</label>
+              <%= form.password_field :password,  class: "form-control", id: "Senha"%>
+              <label class="form-label" for="Senha">Senha</label>
             </div>
 
             <div class="row mb-4">
@@ -53,12 +63,8 @@
             </div>
 
             <div class="d-grid gap-2">
-            <button type="button" class="btn btn-primary btn-block mb-4">
-            <i class="bi bi-arrow-right-circle"></i>
-            Acessar
-            </button>
+            <%= form.button "Acessar", class: "btn btn-primary btn-block mb-4", id: "btnLogin" %>
             </div>
-
           </form>
 
         </div>
@@ -66,3 +72,4 @@
     </div>
   </div>
 </section>
+<% end %>
