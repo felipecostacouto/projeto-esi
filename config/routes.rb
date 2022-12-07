@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       delete :delete_diretorio
     end
   end
-
+  get 'meusDiretorios', to:'diretorios#userDirectories'
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
   get 'login', to: 'registrations#login'

@@ -6,6 +6,10 @@ RSpec.describe DiretoriosController, type: :routing do
       expect(get: "/diretorios").to route_to("diretorios#index")
     end
 
+    it "routes to #meusDiretorios" do
+      expect(get: "/meusDiretorios").to route_to("diretorios#userDirectories")
+    end
+
     it "routes to #new" do
       expect(get: "/diretorios/new").to route_to("diretorios#new")
     end

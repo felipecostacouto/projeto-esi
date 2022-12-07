@@ -35,6 +35,14 @@ RSpec.describe "/diretorios", type: :request do
     end
   end
 
+  describe "GET /meusDiretorios" do
+    it "renders a successful response" do
+      Diretorio.create! valid_attributes
+      get '/meusDiretorios'
+      expect(response).to be_successful
+    end
+  end
+
   describe "GET /show" do
     it "renders a successful response" do
       diretorio = Diretorio.create! valid_attributes
