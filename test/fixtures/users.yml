@@ -1,0 +1,9 @@
+root:
+  name: root
+  email: emailteste@usp.br
+  password: 123
+
+Teste:
+  name: Teste
+  email: emailteste_2@usp.br
+  password: 321
