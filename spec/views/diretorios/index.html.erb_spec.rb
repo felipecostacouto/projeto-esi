@@ -8,16 +8,24 @@ RSpec.describe "diretorios/index", type: :view do
     assign(:diretorios, [
       Diretorio.create!(
         name: "dir1",
-        path: "/"
+        path: "/",
+        flPublic:true
       ),
       Diretorio.create!(
         name: "dir2",
-        path: "/"
+        path: "/",
+        flPublic:true
       ),
       Diretorio.create!(
         name: "dir3",
-        path: "/"
-      )
+        path: "/",
+        flPublic:true
+      ),
+      Diretorio.create!(
+        name: "dir4",
+        path: "/",
+        flPublic:false
+      ),
     ])
 
     assign(:diretorios_mapa, [
@@ -32,6 +40,10 @@ RSpec.describe "diretorios/index", type: :view do
       DiretoriosMapa.create!(
         parent: Diretorio.where(name: 'dir1').ids[0],
         child: Diretorio.where(name: 'dir3').ids[0]
+      ),
+      DiretoriosMapa.create!(
+        parent: Diretorio.where(name: 'root').ids[0],
+        child: Diretorio.where(name: 'dir4').ids[0]
       )
     ])
   end
@@ -49,6 +61,11 @@ RSpec.describe "diretorios/index", type: :view do
       expect(page).to have_button('Editar')
       expect(page).to have_button('Criar')
     }
+  end
+
+  it "doesn't show hidden directory" do
+    visit("/menu")
+    expect(page).not_to have_content('dir4')
   end
 
   it "shows buttons 'Back' for all directory except for root." do

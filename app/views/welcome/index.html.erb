@@ -102,7 +102,7 @@
     <ul class="list-group mt-3 mb-3 text-white">
 
       <% DiretoriosMapa.where(parent: Diretorio.where(name: 'root').ids[0]).each do |diretorio_in_root| %>
-        <%= render Diretorio.where(id: diretorio_in_root.child) %>
+        <%= render Diretorio.where(id: diretorio_in_root.child, flPublic:true) %>
       <% end %>
 
     </ul>

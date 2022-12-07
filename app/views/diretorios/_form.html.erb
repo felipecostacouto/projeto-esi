@@ -51,6 +51,15 @@
   <br/>
   <br/>
   <div>
+    <%= form.label :flPublic, "Público", style: "display: block" %><br/>
+    <%= form.label :flPublic, 'Sim', value: "true" %>
+    <%= form.radio_button :flPublic, true %>
+    <%= form.label :flPublic, 'Não', value: "false" %>
+    <%= form.radio_button :flPublic, false %>
+  </div>
+  <br/>
+  <br/>
+  <div>
     <%= form.hidden_field :parent_ID, :value => @diretorio_parent_id %>
     <%= form.submit 'Salvar Diretório', class: "button" %>
   </div>
