@@ -5,5 +5,10 @@
 <br>
 
 <div>
-  <%= link_to "Voltar para Diretorios", diretorios_path %>
+  <% if not !Current.user %>
+    <%= link_to "Voltar para Meus Diretorios", '/meusDiretorios'%>
+  <% end %>
+  <% if not Current.user %>
+    <%= link_to "Voltar para Diretorios", diretorios_path %>
+  <% end %>
 </div>

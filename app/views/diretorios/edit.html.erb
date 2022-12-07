@@ -6,5 +6,10 @@
 
 <div>
   <%= link_to "Mostrar", @diretorio %> |
-  <%= link_to "Voltar ao Índice", diretorios_path %>
+  <% if not !Current.user %>
+    <%= link_to "Voltar para Meus Diretorios", '/meusDiretorios'%>
+  <% end %>
+  <% if not Current.user %>
+    <%= link_to "Voltar ao Índice", diretorios_path %>
+  <% end %>
 </div>

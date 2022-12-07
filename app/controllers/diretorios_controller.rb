@@ -11,6 +11,11 @@ class DiretoriosController < ApplicationController
     @diretorio_mapa = DiretoriosMapa.new
   end
 
+  #GET /meusDiretorios
+  def userDirectories
+    @diretorios = Diretorio.where(userId: session[:user_id])
+  end
+
   # GET /diretorios/new
   def new
     @diretorio = Diretorio.new
