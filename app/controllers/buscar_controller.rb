@@ -1,9 +1,15 @@
 class BuscarController < ApplicationController
+  @search_input = 'root'
+  @diretorio = Diretorio.new
+
   def new
   end
 
   def show
-    @diretorio = Diretorio.find_by(id: params[:id])
+    @diretorio = Diretorio.find_by_name(params[:name])
+    if @diretorio.nil?
+      redirect_to buscar_path, notice: "Diretorio nao encontrado"
+    end
   end
 
    def search
