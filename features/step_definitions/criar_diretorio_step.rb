@@ -36,3 +36,4 @@ end
 Então('deverei ver a mensagem de erro "Nome inválido. Não é permitido a utilização dos caracteres especiais"') do
   expect(page).to have_content('Nome inválido. Não é permitido a utilização dos caracteres especiais')
 end
+
