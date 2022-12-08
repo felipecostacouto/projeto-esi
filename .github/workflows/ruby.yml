@@ -50,7 +50,14 @@ jobs:
         github-token: ${{ secrets.github_token }}
         flag-name: run-${{ matrix.test_number }}
         parallel: true
-    
+
+    - name: Publish code coverage to code-climate
+      if: ${{ github.event_name == 'push' }}
+      uses: paambaati/codeclimate-action@v3.2.0
+      env:
+        CC_TEST_REPORTER_ID: fc9c25c332a4410bbf09527fd650f65df6822427a6480c0988186cb2f93fc825
+      with:
+        debug: true
 
   coveralls:
     name: coveralls-finish
