@@ -19,12 +19,34 @@
           overflow-y: auto;
       }
 
+      .welcome-text {
+          padding: 10px;
+          margin-top: 40px;
+          border: 1px solid #6a95ea;
+          border-radius: 20px;
+          font-size: 12px;
+          color: white;
+          width: 700px !important;
+          max-height: 300px;
+          min-height: 300px;
+          text-align: justify;
+      }
+
+      .welcome-title {
+          color: #6a95ea;
+          font-size: 36px;
+          font-style: oblique;
+          text-align: center;
+      }
+
       .container-list {
           margin-top: 70px;
           border: 1px solid #6a95ea;
           border-radius: 20px;
           padding-bottom: 20px;
           padding-top: 10px;
+          max-width: 700px;
+          min-width: 700px;
       }
 
       .ml-2 {
@@ -96,7 +118,17 @@
   </style>
 </head>
 <body>
-<div class="container d-flex justify-content-center">
+
+<div class="container d-flex justify-content-center flex-column">
+
+  <div class="welcome-text">
+    <p class="welcome-title">Bem-vindo ao USPShare!</p>
+    <p>A USPShare é sua plataforma para compartilhar materiais, arquivos, listas e tudo relacionado a disciplinas
+    da graduação e pós graduação. Feito de alunos da USP para alunos da USP, que sabem na pele quão frustrante pode
+    ser se preparar para uma prova ou atividade acadêmica sem ter o material necessário.</p>
+    <p><b>AVISO IMPORTANTE:</b> O compartilhamento de provas NÃO é permitido nessa plataforma caso não haja aval
+    do docente da disciplina.</p>
+  </div>
 
   <div class="container-list">
     <ul class="list-group mt-3 mb-3 text-white">
