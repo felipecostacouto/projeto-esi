@@ -1,6 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/maintainability)](https://codeclimate.com/github/beasabreu/projeto-esi/maintainability)
 
-[![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/beasabreu/projeto-esi/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/beasabreu/projeto-esi/test_coverage)
 
 [![Coverage Status](https://coveralls.io/repos/github/beasabreu/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/beasabreu/projeto-esi?branch=main)
 
