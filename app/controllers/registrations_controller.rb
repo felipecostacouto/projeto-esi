@@ -1,6 +1,7 @@
 class RegistrationsController < ApplicationController 
 
 def login
+  @User = User.new()
 end
 
 def makeLogin

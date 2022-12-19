@@ -1,0 +1,38 @@
+<style>
+.card{
+    display: grid;
+    margin-top: 1vh;
+    grid-template-rows: 40vh 18vh;
+    grid-template-columns: 30vw;
+    row-gap: 0.7vh;
+    justify-content: center;
+}
+.user-information{
+    display: grid;
+    grid-template-columns: 5vw auto;
+    row-gap: 2vh;
+    grid-auto-rows: 4vh;
+}
+.img-profile{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+p{
+    text-align: center;
+    font-size: 1.5em;
+}
+</style>
+<section class="card">
+    <div class="user-image">
+        <img class="img-profile" src="https://source.unsplash.com/random" />
+    </div>
+    <div class="user-information">
+        <span class="input-group-text" id="basic-addon1">Email</span>
+        <input class="form-control" type="text" value="<%= Current.user.email %>" id="userEmail"></input>
+        <span class="input-group-text" id="basic-addon1">Nome</span>
+        <input class="form-control" type="text" value="<%= Current.user.name %>" id="userName"></input>
+        <span class="input-group-text" id="basic-addon1">Senha</span>
+        <input class="form-control" type="password" value="<%= Current.user.password %>" id="userPassword"></input>
+    </div>
+</section>

@@ -42,14 +42,14 @@
       </ul>
       <form class="d-flex text-white" role="search">
           <% if Current.user %>
-            Logged in as: <%= Current.user.email %>
+            <%= link_to '<i class="bi bi-file-earmark-person me-2"></i>Perfil' .html_safe, perfil_path, class: "nav-link active me-3" %>
           <% else %>
             <%= link_to '<i class="bi bi-box-arrow-in-right me-2"></i>Login' .html_safe, login_path, class: "nav-link active me-3" %>
             <%= link_to '<i class="bi bi-door-open me-2"></i>Cadastro' .html_safe, signup_path, class: "nav-link active me-3" %>
           <% end %>
       </form>
       <% if not !Current.user %>
-      <%= button_to "Destroy", logout_path, method: :delete %>
+      <%= button_to '<i class="bi bi-box-arrow-in-right me-2"></i>Deslogar' .html_safe, logout_path, method: :delete, class: "nav-link active me-3" %>
       <% end %>
     </div>
   </div>
