@@ -5,10 +5,13 @@ Rails.application.routes.draw do
       delete :delete_diretorio
     end
   end
+
+  get 'perfil', to: 'perfil#perfil'
   get 'meusDiretorios', to:'diretorios#userDirectories'
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
   get 'login', to: 'registrations#login'
+  get 'loginTest', to: 'registrations#loginTest'
   get 'campi', to: 'campi#index'
   post 'login', to: 'registrations#makeLogin'
   post 'signup', to: 'registrations#create'
@@ -29,4 +32,6 @@ Rails.application.routes.draw do
   post 'about', to: 'about#index'
 
   resources :upload_files
+
+ 
 end

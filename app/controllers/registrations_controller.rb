@@ -1,6 +1,18 @@
 class RegistrationsController < ApplicationController 
 
+def loginTest
+  @User = User.new
+  user = User.find_by(email: 'teste@gmail.com')
+  if !user.present?
+    @user = User.new(name: 'Teste', email: 'teste@gmail.com', password: '1234').save!
+    user = User.find_by(email: 'teste@gmail.com')
+  end
+  session[:user_id] = user.id
+  redirect_to root_path
+end
+
 def login
+  @User = User.new
 end
 
 def makeLogin
