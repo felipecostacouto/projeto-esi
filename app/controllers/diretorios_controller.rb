@@ -11,6 +11,11 @@ class DiretoriosController < ApplicationController
     @diretorio_mapa = DiretoriosMapa.new
   end
 
+  #GET /meusDiretorios
+  def userDirectories
+    @diretorios = Diretorio.where(userId: session[:user_id])
+  end
+
   # GET /diretorios/new
   def new
     @diretorio = Diretorio.new
@@ -31,6 +36,13 @@ class DiretoriosController < ApplicationController
       @diretorio.created_at = Time.now
     end
     @parent_id = params[:diretorio][:parent_ID]
+
+    if params[:flPublic] == false
+      @diretorio.userId = session[:user_id]
+    end
+    if params[:flPublic] == nil
+      @diretorio.flPublic = true
+    end
 
     respond_to do |format|
       if @diretorio.save
@@ -54,6 +66,13 @@ class DiretoriosController < ApplicationController
 
   # PATCH/PUT /diretorios/1 or /diretorios/1.json
   def update
+    if (params[:flPublic] == nil or params[:flPublic] == false) and @diretorio.userId == nil
+      @diretorio.userId = session[:user_id]
+      if params[:flPublic] == nil
+        @diretorio.flPublic = true
+      end
+    end
+
     respond_to do |format|
       if @diretorio.update(diretorio_params)
         format.html { redirect_to diretorio_url(@diretorio), notice: "Diretorio foi atualizado com sucesso." }
@@ -92,6 +111,6 @@ class DiretoriosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def diretorio_params
-      params.require(:diretorio).permit(:name, :path)
+      params.require(:diretorio).permit(:name, :path, :flPublic)
     end
 end

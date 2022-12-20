@@ -25,7 +25,7 @@
   }
   function verifyEmail(){
     let emailvalue = document.getElementById("Email").value;
-    if(document.getElementById("Email").value != "" && emailvalue.includes("@usp.br") && emailPattern.test(emailvalue)){
+    if(document.getElementById("Email").value != "" && emailPattern.test(emailvalue)){
       hasEmail = true;
       checkSubmit();
     }else{

@@ -7,21 +7,25 @@ RSpec.describe "diretorios/index", type: :view do
   before(:each) do
     assign(:diretorios, [
       Diretorio.create!(
-        name: "root",
-        path: "Path"
-      ),
-      Diretorio.create!(
         name: "dir1",
-        path: "Path"
+        path: "/",
+        flPublic:true
       ),
       Diretorio.create!(
         name: "dir2",
-        path: "Path"
+        path: "/",
+        flPublic:true
       ),
       Diretorio.create!(
         name: "dir3",
-        path: "Path"
-      )
+        path: "/",
+        flPublic:true
+      ),
+      Diretorio.create!(
+        name: "dir4",
+        path: "/",
+        flPublic:false
+      ),
     ])
 
     assign(:diretorios_mapa, [
@@ -36,6 +40,10 @@ RSpec.describe "diretorios/index", type: :view do
       DiretoriosMapa.create!(
         parent: Diretorio.where(name: 'dir1').ids[0],
         child: Diretorio.where(name: 'dir3').ids[0]
+      ),
+      DiretoriosMapa.create!(
+        parent: Diretorio.where(name: 'root').ids[0],
+        child: Diretorio.where(name: 'dir4').ids[0]
       )
     ])
   end
@@ -55,13 +63,22 @@ RSpec.describe "diretorios/index", type: :view do
     }
   end
 
-  it "shows buttons 'Back' for all directory expect for root." do
-    @ids_existentes = Diretorio.ids
+  it "doesn't show hidden directory" do
+    visit("/menu")
+    expect(page).not_to have_content('dir4')
+  end
 
+  it "shows buttons 'Back' for all directory except for root." do
+    @ids_existentes = Diretorio.all
     @ids_existentes.each { |i|
-      visit("/diretorios/" << i.to_s)
+      print(i.name)
+      print(i.path)
+      print('\n')
+    }
+    @ids_existentes.each { |i|
+      visit("/diretorios/" << i.id.to_s)
 
-      @diretorio_atual = Diretorio.find(i)
+      @diretorio_atual = Diretorio.find(i.id)
 
       if @diretorio_atual[:name] == 'root'
         expect(page).not_to have_button('Back')

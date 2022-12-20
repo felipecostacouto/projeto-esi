@@ -19,4 +19,12 @@ RSpec.describe Diretorio, type: :model do
     diretorio.name = 'Teste'
     diretorio.path = 'root'
   end
+
+  it 'Todos mapeados' do
+    @ids = Diretorio.ids
+
+    (0..(@ids.length - 1)).each { |i|
+      expect(DiretoriosMapa.where(:parent => @ids[i])).not_to be(nil)
+    }
+  end
 end

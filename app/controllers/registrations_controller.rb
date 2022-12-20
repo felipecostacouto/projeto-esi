@@ -1,21 +1,32 @@
 class RegistrationsController < ApplicationController 
 
+def loginTest
+  @User = User.new
+  user = User.find_by(email: 'teste@gmail.com')
+  if !user.present?
+    @user = User.new(name: 'Teste', email: 'teste@gmail.com', password: '1234').save!
+    user = User.find_by(email: 'teste@gmail.com')
+  end
+  session[:user_id] = user.id
+  redirect_to root_path
+end
+
 def login
+  @User = User.new
 end
 
 def makeLogin
-  user = User.find_by(email: params[:email])
+  @new_User = User.new(user_params)
+  user = User.find_by(email: @new_User[:email])
   if user.present? 
-    if user[:password] == params[:password]
+    if user[:password] == @new_User[:password]
       session[:user_id] = user.id
-      redirect_to login_path
+      redirect_to root_path
     else
       redirect_to login_path, notice: 'Senha incorreta! Tente novamente.'
-
     end
   else
     redirect_to login_path, notice: 'Usuário não cadastrado!'
-
   end
 end
 

@@ -1,8 +1,14 @@
 <h1>Buscar Diretório</h1>
-
+<div class="errors">
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
+</div>
 <%= form_with model: @diretorio, url:buscar_path,local: true, data: { turbo: false } do |form| %>
     <div class="mb-3">
-        <%= form.label :buscar %>
+        <%= form.label :buscar, "Buscar"%>
         <%= form.text_field :name, class: "form-control", placeholder: "Digite o nome do Diretório Aqui" %>
     </div>
 

@@ -9,7 +9,7 @@ Dado('que estou na página de login') do
   Quando('preencho o campo Senha com {string}') do |string|
     fill_in 'Senha', :with => string
   end
-  
+
   Quando('clico em Acessar') do
     click_on 'Acessar'
   end
@@ -17,7 +17,7 @@ Dado('que estou na página de login') do
   Então('deverei ser redirecionado a página Inicial') do
     visit root_path
   end
-  
+
   Então('deverei ver a mensagem de erro {string} na tela de login') do |string|
     expect(page).to have_css('.errors')
   end
