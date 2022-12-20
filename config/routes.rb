@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
   get 'login', to: 'registrations#login'
+  get 'loginTest', to: 'registrations#loginTest'
   get 'campi', to: 'campi#index'
   post 'login', to: 'registrations#makeLogin'
   post 'signup', to: 'registrations#create'
