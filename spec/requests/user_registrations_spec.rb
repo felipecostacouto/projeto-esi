@@ -24,6 +24,13 @@ RSpec.describe "/registrations", type: :request do
         end
       end
 
+      describe "GET /loginTest" do
+        it "renders a sucessful response" do
+            get loginTest_path
+            expect(response).to redirect_to(root_path)
+        end
+      end
+
       describe "POST /login" do
         context "with valid parameters" do
             it "redirects to home" do
