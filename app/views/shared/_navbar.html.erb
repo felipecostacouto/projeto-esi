@@ -10,31 +10,27 @@
         <%= link_to '<i class="bi bi-house-door"></i> Menu' .html_safe, menu_path, class: "nav-link active" %>
         </li>
         <li class="nav-item">
-        <%= link_to '<i class="bi bi-search"></i> Buscar' .html_safe, buscar_path, class: "nav-link active me-3" %>
+        <%= link_to '<icon class="bi bi-globe"/>Campi' .html_safe, campi_path, class: "nav-link active" %>
         </li>
         <% if not !Current.user %>
           <li class="nav-item">
             <%= link_to '<i class="bi bi-folder"></i> Seus Diretórios' .html_safe, '/meusDiretorios', class: "nav-link active me-3" %>
           </li>
         <% end %>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-pencil-square"></i>
-            ADM
-          </a>
-          <ul class="dropdown-menu bg-dark text-white">
-            <li><%= link_to '<icon class="bi bi-folder"/>  Diretórios' .html_safe, diretorios_path, class: "nav-link active" %></li>
-            <li><%= link_to '<icon class="bi bi-book"/>  Matérias' .html_safe, subjects_path, class: "nav-link active" %></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-globe"></i>
-            Campi
-          </a>
-          <ul class="dropdown-menu bg-dark text-white">
-            <li><%= link_to '<icon class="bi bi-folder"/>Campi' .html_safe, campi_path, class: "nav-link active" %></li>
-          </ul>
+        <% if Current.user %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-pencil-square"></i>
+              ADM
+            </a>
+            <ul class="dropdown-menu bg-dark text-white">
+              <li><%= link_to '<icon class="bi bi-folder"/>  Diretórios' .html_safe, diretorios_path, class: "nav-link active" %></li>
+              <li><%= link_to '<icon class="bi bi-book"/>  Matérias' .html_safe, subjects_path, class: "nav-link active" %></li>
+            </ul>
+          </li>
+        <% end %>
+        <li class="nav-item">
+        <%= link_to '<i class="bi bi-search"></i> Buscar' .html_safe, buscar_path, class: "nav-link active me-3" %>
         </li>
         <li class="nav-item">
         <%= link_to '<i class="bi bi-browser-safari"></i> About Us' .html_safe, about_path, class: "nav-link active" %>
