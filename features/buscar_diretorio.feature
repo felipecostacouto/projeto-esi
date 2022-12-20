@@ -9,16 +9,16 @@ Cenário: busca do Diretório com sucesso
 Dado que estou na página de busca de diretórios
 Quando preencho o campo "name" com "root"
 E clico em buscar
-Então deverei ver o diretório buscado na página buscar
+Então deverei ver o diretório buscado na página de Resultado
 
 Cenário: busca de Diretório com erro - sem nome
 Dado que estou na página de busca de diretórios
-E não preencho o search_input
+E deixo o campo "name" vazio
 E clico em buscar
-Então deverei ver ser redirecionado a página de Busca
+Então deverei a mensagem de erro "Por favor insira nome válido"
 
 Cenário: Diretório não encontrado - diretório não existe
 Dado que estou na página de busca de diretórios
-Quando preencho o campo "name" com "a!1ç....,,,´/ ? za"
+Quando preencho o campo "name" com "aws"
 E clico em buscar
-Então deverei ver ser redirecionado a página de Busca
+Então deverei ver a mensagem de erro "Diretório não encontrado, por favor tente novamente."
