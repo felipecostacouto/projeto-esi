@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Perfils", type: :request do
+RSpec.describe "Sessions", type: :request do
   let(:valid_attributes) {
     { 
         "name" => 'Teste',
@@ -8,17 +8,13 @@ RSpec.describe "Perfils", type: :request do
         "password" => '123'
     }
   }
-  describe "GET /perfil" do
-    it "renders a successful response" do
+  describe "POST /logout" do
+    it "redirects to home" do
       user = User.create! valid_attributes
       post login_path, params: { user: valid_attributes }
       expect(response).to redirect_to(root_path)
-      get perfil_path
-      expect(response).to be_successful
-    end
-    it "goes to login page" do
-      get perfil_path
-      expect(response).to redirect_to(login_path)
+      delete logout_path
+      expect(response).to redirect_to(root_path)
     end
   end
 end

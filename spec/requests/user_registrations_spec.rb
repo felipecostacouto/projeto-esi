@@ -8,8 +8,22 @@ RSpec.describe "/registrations", type: :request do
             "password" => '123'
         }
       }
+    let(:valid_attributes_non_existent) {
+        { 
+            "name" => 'Teste',
+            "email" => 'emailteste1@gmail.com',
+            "password" => '123'
+        }
+      }
+    let(:invalid_attributes_wrong_password) {
+        { 
+            "name" => 'Teste',
+            "email" => 'emailteste@gmail.com',
+            "password" => '321'
+        }
+      }
     
-      let(:invalid_attributes) {
+    let(:invalid_attributes) {
         { 
             "name" => 'Teste',
             "email" => 'emailteste',
@@ -38,6 +52,20 @@ RSpec.describe "/registrations", type: :request do
                 post login_path, params: { user: valid_attributes }
                 expect(response).to redirect_to(root_path)
             end
+        end
+        context "with valid email but wrong password" do
+          it "redirects back to login" do
+              user = User.create! valid_attributes
+              post login_path, params: { user: invalid_attributes_wrong_password }
+              expect(response).to redirect_to(login_path)
+          end
+        end
+        context "with non-existent user" do
+          it "redirects back to login" do
+              user = User.create! valid_attributes
+              post login_path, params: { user: valid_attributes_non_existent }
+              expect(response).to redirect_to(login_path)
+          end
         end
       end
 

@@ -11,8 +11,5 @@ class PerfilController < ApplicationController
     end
     def showData
         user = User.where(id: session[:user_id])
-        if !user.present?
-            redirect_to perfil_path, notice: "Usuário não encontrado!";
-        end
     end
 end
