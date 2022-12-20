@@ -1,7 +1,11 @@
 <h1>Resultado</h1>
 
 <p>
-  <%= render @diretorio %>
+  <% if @diretorio.present? %>
+    <%= render @diretorio %>
+  <% else %>
+    <p> Diretório não encontrado, por favor tente novamente. <p>
+  <% end %>
 
   <div class = "mb-3">
       <%= link_to "Voltar", buscar_path, class: "btn-outline-secondary"  %>

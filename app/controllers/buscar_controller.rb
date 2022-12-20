@@ -1,25 +1,21 @@
 class BuscarController < ApplicationController
-  @search_input = 'root'
-  @diretorio = Diretorio.new
+    def index
+     @diretorio = Diretorio.all
+   end
 
-  def new
-  end
+   def search
+      @diretorio = Diretorio.where("name LIKE ?", "%" + params[:name] + "%")
+   end
 
   def show
-    @diretorio = Diretorio.find_by_name(params[:name])
-    if @diretorio.nil?
-      redirect_to buscar_path, notice: "Diretorio nao encontrado"
+    @diretorio = Diretorio.where("name LIKE ?", "%" + params[:name] + "%")
+    if params[:name].blank?
+       redirect_to buscar_path, notice: "Por favor insira nome válido"
+    elsif params[:name].present?
+       @diretorio = Diretorio.where("name LIKE ?", "%" + params[:name] + "%")
     end
   end
 
-   def search
-        @diretorio = Diretorio.super_search(name: params[:name])
-       if @diretorio.validates?
-        Flash[:alert] = "O Diretório que você está buscando não existe!"
-      else
-        redirect_to buscar_path, notice: "FOUND"
-      end
-   end
 
    private
    def busca_params
