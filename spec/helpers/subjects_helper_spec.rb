@@ -13,18 +13,18 @@ require 'rails_helper'
 RSpec.describe SubjectsHelper, type: :helper do
   def create_random_subject
     random_name = "name_" + rand(1000).to_s
-    @new_subject = Subject.new({name: random_name, path: "/root/" + random_name})
+    @new_subject = Subject.new({name: random_name})
     @new_subject.save
   end
 
   def create_random_subject_with_path(path)
     random_name = "name_" + rand(1000).to_s
-    @new_subject = Subject.new({name: random_name, path: path})
+    @new_subject = Subject.new({name: random_name})
     @new_subject.save
   end
 
   def create_random_subject_with_name(name)
-    @new_subject = Subject.new({name: name, path: "/root/" + name})
+    @new_subject = Subject.new({name: name})
     @new_subject.save
   end
 
