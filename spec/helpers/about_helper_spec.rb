@@ -11,5 +11,9 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe AboutHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  def create_random_suggestion
+    random_suggestion = "name_" + rand(1000).to_s
+    @new_request = About.new({sugestao: random_suggestion})
+    @new_request.save
+  end
 end
