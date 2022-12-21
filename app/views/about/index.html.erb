@@ -1,4 +1,40 @@
-<h1>About Page</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      body{
+          background: #1a0c50;
+          color: white;
+      }
+
+      .title {
+          color: #6a95ea;
+          font-size: 36px;
+          font-style: normal;
+          text-align: center;
+      }
+
+      .subtitle {
+          color: #6a95ea;
+          font-size: 24px;
+          font-style: normal;
+          text-align: left;
+      }
+
+      .list-group-item:hover .check {
+          opacity: 1;
+      }
+
+      .about span{
+          font-size: 12px;
+          margin-right: 10px;
+      }
+  </style>
+</head>
+<h1 class="title">About Page</h1>
 
 <p>Aplicação para compartilharmento de arquivos entre alunos desenvolvida para a disciplina Engenharia de Sistemas de Informação I no 2˚ semestre de 2022, na EACH - USP</p>
 <p>Abaixo você pode nos enviar alguma sugestão de melhoria para plataforma: </p>
@@ -13,8 +49,8 @@
 <%= form_with scope: :about, url: about_path, local: true, data: { turbo: false } do |form| %>
 
   <p>
-    <%= form.label :sugestao %><br>
-    <%= form.text_field :sugestao, placeholder: 'sugestao', :size => 130 %>
+    <%= form.label :sugerir, class:"subtitle"%><br>
+    <%= form.text_field :sugestao, placeholder: 'Nos escreva sua sugestão aqui.', :size => 130 %>
   </p>
 
   <p>
