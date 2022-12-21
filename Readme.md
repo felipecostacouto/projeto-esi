@@ -2,7 +2,7 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/felipecostacouto/projeto-esi/test_coverage)
 
-[![Coverage Status](https://coveralls.io/repos/github/felipecostacouto/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/felipecostacouto/projeto-esi?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/felipecostacouto/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/felipecostacouto/projeto-esi?branch=main&kill_cache=1)
 
 ![Github Actions Build Status](https://github.com/felipecostacouto/projeto-esi/actions/workflows/ruby.yml/badge.svg)
 # USP Share
