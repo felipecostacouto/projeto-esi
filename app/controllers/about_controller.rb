@@ -1,8 +1,5 @@
 class AboutController < ApplicationController
 
-  def new
-    @about = About.new
-  end
   def index
     @about = About.all
   end
@@ -14,10 +11,6 @@ class AboutController < ApplicationController
     else
       redirect_to about_path, notice: "É obrigatório inserir algum texto no campo de sugestões!"
     end
-  end
-
-  def show
-    @About = About.find(params[:id])
   end
 
     def about_params

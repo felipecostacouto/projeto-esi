@@ -18,6 +18,6 @@ Quando('deixo o campo sugestao vazio') do |string|
    page.fill_in :placeholder => 'sugestao', with: ''
  end
 
-Então('deverei ver a mensagem de erro string}') do |string|
+Então('deverei ver a mensagem de erro {string} na tela about page') do |string|
   expect(page).to have_content("É obrigatório inserir algum texto no campo de sugestões!")
 end
