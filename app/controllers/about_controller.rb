@@ -10,18 +10,16 @@ class AboutController < ApplicationController
   def create
     @about = About.new(about_params)
     if @about.save
-      redirec_to @about, flash[:alert] = "Sua sugestão foi recebida por nossa equipe, agradecemos a colaboração!"
+      redirect_to about_path, notice: "Sua sugestão foi recebida por nossa equipe, agradecemos a colaboração!"
     else
-      flash[:alert] = "É obrigatório inserir algum texto no campo de sugestões!"
-      render :new
+      redirect_to about_path, notice: "É obrigatório inserir algum texto no campo de sugestões!"
     end
   end
 
   def show
-    @about = About.find(params[:id])
+    @About = About.find(params[:id])
   end
 
-    private
     def about_params
       params.require(:about).permit(:sugestao)
     end

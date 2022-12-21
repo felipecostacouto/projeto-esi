@@ -7,7 +7,7 @@ Eu quero cadastrar um comentário no banco de dados
 
 Cenário: Cadastro de comentário com sucesso
 Dado que estou na página de about
-Quando preencho o campo "sugestao" com "text text text text"
+Quando preencho o campo "sugestao" com "text"
 E clico em Enviar
 Então ele deve ter sido salvo no banco de dados
 #E deverei ver a mensagem de sucesso "Sua sugestão foi recebida por nossa equipe, agradecemos a colaboração!"

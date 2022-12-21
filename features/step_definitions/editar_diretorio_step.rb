@@ -33,3 +33,7 @@ end
 E('preencho o campo nome com "*ESI"') do
   fill_in 'Nome', :with => '*ESI'
 end
+#Adição para passar nos testes CC
+Então('deverei ver a mensagem de erro {string}') do |string|
+  expect(page).to have_content('Nome inválido. Não é permitido a utilização dos caracteres especiais')
+end

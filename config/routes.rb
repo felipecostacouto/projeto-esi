@@ -29,9 +29,9 @@ Rails.application.routes.draw do
 
   resources :about_page
   get 'about', to: 'about#index'
-  post 'about', to: 'about#index'
+  post 'about', to: 'about#create'
 
   resources :upload_files
 
- 
+
 end
