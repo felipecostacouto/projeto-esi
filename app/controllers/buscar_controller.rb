@@ -16,8 +16,6 @@ class BuscarController < ApplicationController
     end
   end
 
-
-   private
    def busca_params
      params.require(:diretorio).permit(:name)
    end

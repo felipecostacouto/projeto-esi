@@ -1,6 +1,5 @@
 class CampiController < ApplicationController
   before_action :set_campi, only: %i[ show edit update destroy ]
-  $rootId = 1
   # GET /campi or /campi.json
   def index
     @campi = Campi.where.not(name: 'root')
@@ -22,12 +21,6 @@ class CampiController < ApplicationController
   # GET /campi/1/edit
   def edit
     @campi = Campi.where.not(id: @campi.id)
-  end
-
-  private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_diretorio
-    @diretorio = Campi.find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
