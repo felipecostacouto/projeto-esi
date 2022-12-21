@@ -1,11 +1,15 @@
 <style>
+body{
+    background: #1a0c50;
+}
 .card{
     display: grid;
-    margin-top: 1vh;
-    grid-template-rows: 40vh 18vh;
+    margin-top: 12vh;
+    grid-template-rows: 40vh 23vh;
     grid-template-columns: 30vw;
     row-gap: 0.7vh;
     justify-content: center;
+    background-image: linear-gradient(to right, #C9D6FF, #E2E2E2);
 }
 .user-information{
     display: grid;
@@ -18,21 +22,33 @@
     height: 100%;
     object-fit: contain;
 }
+.btn-save{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 p{
     text-align: center;
     font-size: 1.5em;
 }
 </style>
+<p style="color: green"><%= notice %></p>
+
 <section class="card">
     <div class="user-image">
         <img class="img-profile" src="https://source.unsplash.com/random" />
     </div>
+    <%= form_with model: Current.user, url: editprofile_path do |form| %>
     <div class="user-information">
-        <span class="input-group-text" id="basic-addon1">Email</span>
-        <input class="form-control" type="text" value="<%= Current.user.email %>" id="userEmail"></input>
-        <span class="input-group-text" id="basic-addon1">Nome</span>
-        <input class="form-control" type="text" value="<%= Current.user.name %>" id="userName"></input>
-        <span class="input-group-text" id="basic-addon1">Senha</span>
-        <input class="form-control" type="password" value="<%= Current.user.password %>" id="userPassword"></input>
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <%= form.text_field :email,  class: "form-control", type: "text", id: "Email", value: Current.user.email  %>
+            <span class="input-group-text" id="basic-addon1">Nome</span>
+            <%= form.text_field :name,  class: "form-control", type: "text", id: "Name", value: Current.user.name  %>
+            <span class="input-group-text" id="basic-addon1">Senha</span>
+            <%= form.text_field :password,  class: "form-control", type: "password", id: "Password", value: Current.user.password  %>
+            <%= form.button "Salvar", class: "btn btn-primary btn-save", id: "btnEditProfile" %>
     </div>
+        <% Current.user.errors.full_messages.each do |message| %>
+            <div>ERRO: <%= message %></div>
+        <% end %>
+    <% end %>
 </section>
