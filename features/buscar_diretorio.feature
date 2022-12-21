@@ -21,4 +21,4 @@ Cenário: Diretório não encontrado - diretório não existe
 Dado que estou na página de busca de diretórios
 Quando preencho o campo "name" com "aws"
 E clico em buscar
-Então deverei ver a mensagem de erro "Diretório não encontrado, por favor tente novamente."
+Então deverei ver a mensagem "Diretório não encontrado, por favor tente novamente."

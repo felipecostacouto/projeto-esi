@@ -27,6 +27,6 @@ Quando('preencho o campo buscar com um diretório que não existe') do
   fill_in 'name', :with => 'aws'
 end
 
-Então('deverei ver ser redirecionado a página de Busca') do
+Então('deverei ver a mensagem {string}') do |string|
   expect(page).to have_content('Diretório não encontrado, por favor tente novamente.')
 end

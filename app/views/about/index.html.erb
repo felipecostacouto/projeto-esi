@@ -3,12 +3,18 @@
 <p>Aplicação para compartilharmento de arquivos entre alunos desenvolvida para a disciplina Engenharia de Sistemas de Informação I no 2˚ semestre de 2022, na EACH - USP</p>
 <p>Abaixo você pode nos enviar alguma sugestão de melhoria para plataforma: </p>
 
-
+<div class="errors">
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
+</div>
 <%= form_with scope: :about, url: about_path, local: true, data: { turbo: false } do |form| %>
 
   <p>
     <%= form.label :sugestao %><br>
-    <%= form.text_field :sugestao, placeholder: 'sugestao', :size => 150 %>
+    <%= form.text_field :sugestao, placeholder: 'sugestao', :size => 130 %>
   </p>
 
   <p>
