@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
 
   get 'perfil', to: 'perfil#perfil'
+  patch 'editprofile', to: 'perfil#editprofile'
   get 'meusDiretorios', to:'diretorios#userDirectories'
   get 'menu', to: 'welcome#index'
   get 'signup', to: 'registrations#new'
