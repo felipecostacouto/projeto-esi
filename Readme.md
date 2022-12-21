@@ -1,10 +1,10 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/maintainability)](https://codeclimate.com/github/beasabreu/projeto-esi/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/maintainability)](https://codeclimate.com/github/felipecostacouto/projeto-esi/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/beasabreu/projeto-esi/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/db41a5c6bc4f9a836ade/test_coverage)](https://codeclimate.com/github/felipecostacouto/projeto-esi/test_coverage)
 
-[![Coverage Status](https://coveralls.io/repos/github/beasabreu/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/beasabreu/projeto-esi?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/felipecostacouto/projeto-esi/badge.svg?branch=main)](https://coveralls.io/github/felipecostacouto/projeto-esi?branch=main)
 
-![Github Actions Build Status](https://github.com/beasabreu/projeto-esi/actions/workflows/ruby.yml/badge.svg)
+![Github Actions Build Status](https://github.com/felipecostacouto/projeto-esi/actions/workflows/ruby.yml/badge.svg)
 # USP Share
 A [USP Share](https://projeto-esi-heroku.herokuapp.com/) é uma aplicação web voltada para o compartilhamento entre alunos de arquivos, resumos, anotações, mapas mentais e materiais de matérias ministradas na USP, separado por campus e curso.
 
